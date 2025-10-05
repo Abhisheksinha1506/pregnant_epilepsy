@@ -1,0 +1,95 @@
+{
+  "extraction_info": {
+    "total_sources": 4,
+    "extracted_at": "2025-10-05 15:43:59",
+    "successful_extractions": 1
+  },
+  "sources": [
+    {
+      "source": "Healthline Pregnancy",
+      "url": "https://www.healthline.com/health/pregnancy",
+      "description": "Healthline pregnancy health information",
+      "extracted_at": "2025-10-05 15:44:07",
+      "sections": [
+        {
+          "title": "Important Information 1",
+          "content": [
+            "being overweight orobese",
+            "having a prior history or afamily historyof pregnancy-induced hypertension"
+          ]
+        },
+        {
+          "title": "Important Information 2",
+          "content": [
+            "pressure on yourligaments",
+            "changes in yourposture",
+            "a heavier uterus"
+          ]
+        },
+        {
+          "title": "Important Information 3",
+          "content": [
+            "cloudyorblood-tingedurine",
+            "pelvic pain",
+            "lower back pain",
+            "nausea and vomiting"
+          ]
+        },
+        {
+          "title": "Important Information 4",
+          "content": [
+            "breast pain",
+            "mood changes",
+            "food sensitivities"
+          ]
+        },
+        {
+          "title": "Important Information 5",
+          "content": [
+            "complex carbohydrates",
+            "vegetablesandfruits",
+            "grainsandlegumes",
+            "healthy fats"
+          ]
+        },
+        {
+          "title": "Important Information 7",
+          "content": [
+            "multiple-birth pregnancies, such astwinsortriplets",
+            "infections, includingSTDs",
+            "being overweight orobese"
+          ]
+        },
+        {
+          "title": "Important Information 8",
+          "content": [
+            "high blood pressure",
+            "gestational diabetes",
+            "preeclampsia",
+            "preterm labor",
+            "miscarriage"
+          ]
+        },
+        {
+          "title": "Important Information 9",
+          "content": [
+            "taking a multivitamin",
+            "getting sufficient sleep",
+            "practicing safe sex",
+            "getting a flu shot",
+            "visiting your dentist"
+          ]
+        },
+        {
+          "title": "Important Information 10",
+          "content": [
+            "drinkingalcohol",
+            "eatingraw meat, deli meat, or unpasteurized dairy products",
+            "sitting in ahot tub or sauna",
+            "gainingtoo much weight"
+          ]
+        }
+      ]
+    }
+  ]
+}

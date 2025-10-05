@@ -1,0 +1,90 @@
+{
+  "extraction_info": {
+    "total_pdfs": 11,
+    "extracted_at": "2025-10-05 16:12:36",
+    "successful_downloads": 2,
+    "failed_downloads": 9,
+    "note": "PDF files downloaded and stored in proper PDF format"
+  },
+  "pdf_files": [
+    {
+      "success": true,
+      "filename": "rcog_epilepsy_guidelines.pdf",
+      "path": "pdfs/rcog_epilepsy_guidelines.pdf",
+      "size": 807689,
+      "url": "https://www.rcog.org.uk/media/rzldnacf/gtg68_epilepsy.pdf",
+      "description": "Royal College of Obstetricians and Gynaecologists guidelines for epilepsy in pregnancy"
+    },
+    {
+      "success": false,
+      "filename": "epilepsy_pregnancy_delivery_questions.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-delivery-doctors-questions-EPMC.pdf",
+      "description": "Questions to ask doctors during pregnancy and delivery with epilepsy",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-delivery-doctors-questions-EPMC.pdf"
+    },
+    {
+      "success": false,
+      "filename": "epilepsy_postpartum_questions.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-postpartum-pregnancy-doctors-questions-EPMC.pdf",
+      "description": "Questions to ask doctors during postpartum period with epilepsy",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-postpartum-pregnancy-doctors-questions-EPMC.pdf"
+    },
+    {
+      "success": false,
+      "filename": "anti_seizure_medications_pregnancy_guide.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/what-we-know-asms-pregnancy-epilepsy-EPMC-1.pdf",
+      "description": "Comprehensive guide on anti-seizure medications during pregnancy",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/what-we-know-asms-pregnancy-epilepsy-EPMC-1.pdf"
+    },
+    {
+      "success": false,
+      "filename": "pregnancy_planning_calendar.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/pregnancy-planning-calendar-EPMC-1.pdf",
+      "description": "Pregnancy planning calendar for epilepsy patients",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/pregnancy-planning-calendar-EPMC-1.pdf"
+    },
+    {
+      "success": false,
+      "filename": "anti_seizure_medication_tapering_schedule.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/anti-seizure-medications-pregnancy-tapering-schedule-EPMC-1.pdf",
+      "description": "Medication tapering schedule for after delivery",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/anti-seizure-medications-pregnancy-tapering-schedule-EPMC-1.pdf"
+    },
+    {
+      "success": false,
+      "filename": "birth_control_options_epilepsy.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/what-we-know-birth-control-pregnancy-epilepsy-EPMC.pdf",
+      "description": "Birth control options for people with epilepsy",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/what-we-know-birth-control-pregnancy-epilepsy-EPMC.pdf"
+    },
+    {
+      "success": false,
+      "filename": "epilepsy_pregnancy_journey_planning.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-journey-planning.pdf",
+      "description": "Epilepsy pregnancy journey planning guide",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-journey-planning.pdf"
+    },
+    {
+      "success": false,
+      "filename": "epilepsy_diagnosis_questions.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-diagnosis-pregnancy-doctors-questions-EPMC.pdf",
+      "description": "Questions to ask doctors about epilepsy diagnosis",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-diagnosis-pregnancy-doctors-questions-EPMC.pdf"
+    },
+    {
+      "success": false,
+      "filename": "epilepsy_pregnancy_planning_questions.pdf",
+      "url": "https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-planning-doctors-questions-EPMC.pdf",
+      "description": "Questions to ask doctors when planning pregnancy with epilepsy",
+      "error": "403 Client Error: Forbidden for url: https://media.epilepsypregnancy.com/wp-content/uploads/2025/06/epilepsy-pregnancy-planning-doctors-questions-EPMC.pdf"
+    },
+    {
+      "success": true,
+      "filename": "seizure_event_diary.pdf",
+      "path": "pdfs/seizure_event_diary.pdf",
+      "size": 133643,
+      "url": "https://www.epilepsy.com/sites/default/files/atoms/files/721SED_MySeizureEventDiary_05-2019-B.pdf",
+      "description": "Seizure event diary for tracking seizures"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "source": "Comprehensive Lactation and Breastfeeding Database",
+  "description": "Information on drugs and chemicals during lactation and breastfeeding",
+  "extracted_at": "2025-10-05 16:23:24",
+  "lactation_guidelines": [
+    {
+      "topic": "General Lactation Guidelines",
+      "content": [
+        "Most medications are safe during breastfeeding",
+        "Only a small percentage of maternal drug dose reaches breast milk",
+        "Infant exposure is usually much lower than maternal dose",
+        "Consider infant age, weight, and health status",
+        "Monitor infant for any adverse effects"
+      ]
+    },
+    {
+      "topic": "Epilepsy Medications and Breastfeeding",
+      "content": [
+        "Most antiepileptic drugs are compatible with breastfeeding",
+        "Lamotrigine and levetiracetam are generally safe",
+        "Valproic acid is considered safe during breastfeeding",
+        "Carbamazepine and phenytoin are usually safe",
+        "Monitor infant for sedation or feeding difficulties"
+      ]
+    },
+    {
+      "topic": "Medications to Avoid During Breastfeeding",
+      "content": [
+        "Some chemotherapy drugs",
+        "Radioactive medications",
+        "Certain psychiatric medications",
+        "Some antibiotics (consult healthcare provider)",
+        "Always consult healthcare provider before taking any medication"
+      ]
+    }
+  ],
+  "epilepsy_medications_breastfeeding": [
+    {
+      "medication": "Lamotrigine",
+      "breastfeeding_safety": "Generally safe",
+      "key_points": [
+        "Low levels in breast milk",
+        "Monitor infant for rash or sedation",
+        "Consider timing of doses",
+        "Generally well-tolerated by infants"
+      ],
+      "monitoring": [
+        "Watch for infant rash",
+        "Monitor feeding patterns",
+        "Check for sedation",
+        "Regular pediatric follow-up"
+      ]
+    },
+    {
+      "medication": "Levetiracetam",
+      "breastfeeding_safety": "Generally safe",
+      "key_points": [
+        "Low levels in breast milk",
+        "Good safety profile",
+        "Monitor infant for any adverse effects",
+        "Consider timing of doses"
+      ],
+      "monitoring": [
+        "Watch for infant sedation",
+        "Monitor feeding patterns",
+        "Check for any behavioral changes",
+        "Regular pediatric follow-up"
+      ]
+    },
+    {
+      "medication": "Valproic Acid",
+      "breastfeeding_safety": "Generally safe",
+      "key_points": [
+        "Low levels in breast milk",
+        "Monitor infant for any adverse effects",
+        "Consider timing of doses",
+        "Generally well-tolerated by infants"
+      ],
+      "monitoring": [
+        "Watch for infant sedation",
+        "Monitor feeding patterns",
+        "Check for any behavioral changes",
+        "Regular pediatric follow-up"
+      ]
+    },
+    {
+      "medication": "Carbamazepine",
+      "breastfeeding_safety": "Generally safe",
+      "key_points": [
+        "Low levels in breast milk",
+        "Monitor infant for any adverse effects",
+        "Consider timing of doses",
+        "Generally well-tolerated by infants"
+      ],
+      "monitoring": [
+        "Watch for infant sedation",
+        "Monitor feeding patterns",
+        "Check for any behavioral changes",
+        "Regular pediatric follow-up"
+      ]
+    },
+    {
+      "medication": "Phenytoin",
+      "breastfeeding_safety": "Generally safe",
+      "key_points": [
+        "Low levels in breast milk",
+        "Monitor infant for any adverse effects",
+        "Consider timing of doses",
+        "Generally well-tolerated by infants"
+      ],
+      "monitoring": [
+        "Watch for infant sedation",
+        "Monitor feeding patterns",
+        "Check for any behavioral changes",
+        "Regular pediatric follow-up"
+      ]
+    }
+  ],
+  "general_breastfeeding_tips": [
+    "Continue taking prescribed medications as directed",
+    "Monitor infant for any adverse effects",
+    "Maintain regular pediatric follow-up",
+    "Consider timing of medication doses",
+    "Stay hydrated and well-nourished",
+    "Get adequate rest and support",
+    "Consult healthcare provider with any concerns"
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "source": "Comprehensive Epilepsy Medication Database",
+  "description": "Extended database of epilepsy medications with pregnancy safety information",
+  "extracted_at": "2025-10-05 17:45:00",
+  "medications": [
+    {
+      "medication": "Lamotrigine",
+      "brand_names": ["Lamictal"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Generally considered safer during pregnancy",
+      "key_points": [
+        "Lower risk of major congenital malformations compared to valproate",
+        "May require dose adjustments during pregnancy",
+        "Therapeutic drug monitoring recommended",
+        "Considered safe for breastfeeding"
+      ],
+      "monitoring": [
+        "Regular blood level monitoring",
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks"
+      ]
+    },
+    {
+      "medication": "Levetiracetam",
+      "brand_names": ["Keppra"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Generally considered safer during pregnancy",
+      "key_points": [
+        "Lower risk of major congenital malformations",
+        "Good seizure control during pregnancy",
+        "May require dose adjustments",
+        "Considered safe for breastfeeding"
+      ],
+      "monitoring": [
+        "Regular blood level monitoring",
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks"
+      ]
+    },
+    {
+      "medication": "Valproic Acid",
+      "brand_names": ["Depakote", "Depakene"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Higher risk during pregnancy",
+      "key_points": [
+        "Highest risk of major congenital malformations (10-11%)",
+        "Increased risk of neurodevelopmental problems",
+        "Should be avoided if possible during pregnancy",
+        "If necessary, use lowest effective dose"
+      ],
+      "monitoring": [
+        "High-dose folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Consider alternative medications if possible",
+        "Close monitoring for birth defects"
+      ]
+    },
+    {
+      "medication": "Carbamazepine",
+      "brand_names": ["Tegretol"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Moderate risk during pregnancy",
+      "key_points": [
+        "Risk of neural tube defects",
+        "May cause vitamin K deficiency in newborn",
+        "Requires folic acid supplementation",
+        "Consider vitamin K supplementation in last month"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for neural tube defects"
+      ]
+    },
+    {
+      "medication": "Phenytoin",
+      "brand_names": ["Dilantin"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Moderate risk during pregnancy",
+      "key_points": [
+        "Risk of fetal hydantoin syndrome",
+        "May cause vitamin K deficiency",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for fetal hydantoin syndrome"
+      ]
+    },
+    {
+      "medication": "Topiramate",
+      "brand_names": ["Topamax"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Moderate risk during pregnancy",
+      "key_points": [
+        "Risk of cleft lip/palate",
+        "May cause vitamin K deficiency",
+        "Requires folic acid supplementation",
+        "Consider alternative medications if possible"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for cleft lip/palate"
+      ]
+    },
+    {
+      "medication": "Oxcarbazepine",
+      "brand_names": ["Trileptal"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Moderate risk during pregnancy",
+      "key_points": [
+        "Lower risk than carbamazepine",
+        "May cause vitamin K deficiency",
+        "Requires folic acid supplementation",
+        "Consider vitamin K supplementation"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for birth defects"
+      ]
+    },
+    {
+      "medication": "Gabapentin",
+      "brand_names": ["Neurontin"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Limited data during pregnancy",
+      "key_points": [
+        "Limited human data available",
+        "Generally considered safer than older AEDs",
+        "May require dose adjustments",
+        "Consider alternative medications if possible"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for any adverse effects",
+        "Consider alternative medications"
+      ]
+    },
+    {
+      "medication": "Pregabalin",
+      "brand_names": ["Lyrica"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Limited data during pregnancy",
+      "key_points": [
+        "Limited human data available",
+        "May cause birth defects in animal studies",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for birth defects",
+        "Consider alternative medications"
+      ]
+    },
+    {
+      "medication": "Clonazepam",
+      "brand_names": ["Klonopin"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Higher risk during pregnancy",
+      "key_points": [
+        "Risk of withdrawal symptoms in newborn",
+        "May cause respiratory depression",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for withdrawal symptoms",
+        "Consider alternative medications"
+      ]
+    },
+    {
+      "medication": "Lorazepam",
+      "brand_names": ["Ativan"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Higher risk during pregnancy",
+      "key_points": [
+        "Risk of withdrawal symptoms in newborn",
+        "May cause respiratory depression",
+        "Use only if absolutely necessary",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for withdrawal symptoms",
+        "Consider alternative medications"
+      ]
+    },
+    {
+      "medication": "Phenobarbital",
+      "brand_names": ["Luminal"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Higher risk during pregnancy",
+      "key_points": [
+        "Risk of fetal hydantoin syndrome",
+        "May cause vitamin K deficiency",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for fetal hydantoin syndrome"
+      ]
+    },
+    {
+      "medication": "Primidone",
+      "brand_names": ["Mysoline"],
+      "pregnancy_category": "Category D",
+      "safety_profile": "Higher risk during pregnancy",
+      "key_points": [
+        "Risk of fetal hydantoin syndrome",
+        "May cause vitamin K deficiency",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Vitamin K supplementation in last month",
+        "Monitor for fetal hydantoin syndrome"
+      ]
+    },
+    {
+      "medication": "Ethosuximide",
+      "brand_names": ["Zarontin"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Limited data during pregnancy",
+      "key_points": [
+        "Limited human data available",
+        "Generally considered safer than older AEDs",
+        "May require dose adjustments",
+        "Consider alternative medications if possible"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for any adverse effects",
+        "Consider alternative medications"
+      ]
+    },
+    {
+      "medication": "Vigabatrin",
+      "brand_names": ["Sabril"],
+      "pregnancy_category": "Category C",
+      "safety_profile": "Limited data during pregnancy",
+      "key_points": [
+        "Limited human data available",
+        "May cause vision problems",
+        "Requires careful monitoring",
+        "Consider alternative medications"
+      ],
+      "monitoring": [
+        "Folic acid supplementation (5mg daily)",
+        "Detailed anomaly scan at 18-20 weeks",
+        "Monitor for vision problems",
+        "Consider alternative medications"
+      ]
+    }
+  ],
+  "general_guidelines": [
+    "Pre-pregnancy counseling is essential",
+    "Folic acid supplementation (5mg daily) before conception",
+    "Regular monitoring of medication levels",
+    "Multidisciplinary team approach",
+    "Consider medication changes before pregnancy if possible"
+  ]
+}

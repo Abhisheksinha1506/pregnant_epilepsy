@@ -1,0 +1,6 @@
+Medication,Brand Name,Pregnancy Category,Safety Level,Key Points,Monitoring Required
+Lamotrigine,Lamictal,Category C,Safer,Lower risk of birth defects,"Blood levels, folic acid"
+Levetiracetam,Keppra,Category C,Safer,Good seizure control,"Blood levels, folic acid"
+Valproic Acid,Depakote,Category D,High Risk,Highest risk of birth defects,"Detailed scans, folic acid"
+Carbamazepine,Tegretol,Category D,Moderate Risk,Risk of neural tube defects,"Folic acid, vitamin K"
+Phenytoin,Dilantin,Category D,Moderate Risk,Risk of fetal hydantoin syndrome,"Folic acid, vitamin K"

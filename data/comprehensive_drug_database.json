@@ -1,0 +1,46 @@
+{
+  "extraction_info": {
+    "total_sources": 3,
+    "extracted_at": "2025-10-05 15:55:50",
+    "successful_extractions": 2,
+    "note": "Real drug information from publicly accessible sources"
+  },
+  "sources": [
+    {
+      "source": "NIH Drug Information",
+      "url": "https://www.nih.gov/news-events/news-releases",
+      "description": "NIH drug research and safety information",
+      "extracted_at": "2025-10-05 15:55:52",
+      "drug_information": [
+        {
+          "title": "Drug Information 2",
+          "content": [
+            "Treating opioid addiction in jails improves treatment engagement, reduces overdose deaths and reincarcerationSeptember 10, 2025 —   NIH-funded study demonstrates life-saving potential of providing medications for opioid use disorder in carceral settings.",
+            "One dose of antibiotic treats early syphilis as well as three dosesSeptember 3, 2025 —   NIH-funded clinical trial shows potential to simplify treatment for early syphilis."
+          ]
+        },
+        {
+          "title": "Drug Safety Resources and Links",
+          "content": [
+            "Treating opioid addiction in jails improves treatment engagement, reduces overdose deaths and reincarcerationSeptember 10, 2025 —   NIH-funded study demonstrates life-saving potential of providing medications for opioid use disorder in carceral settings.: https://www.nih.gov/news-events/news-releases/treating-opioid-addiction-jails-improves-treatment-engagement-reduces-overdose-deaths-reincarceration",
+            "One dose of antibiotic treats early syphilis as well as three dosesSeptember 3, 2025 —   NIH-funded clinical trial shows potential to simplify treatment for early syphilis.: https://www.nih.gov/news-events/news-releases/one-dose-antibiotic-treats-early-syphilis-well-three-doses"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "WHO Drug Information",
+      "url": "https://www.who.int/news",
+      "description": "WHO global drug safety information",
+      "extracted_at": "2025-10-05 15:56:00",
+      "drug_information": [
+        {
+          "title": "Drug Safety Resources and Links",
+          "content": [
+            "WHO Drug Information - Volume 39, No. 3: /publications/i/item/9789240115507"
+          ]
+        }
+      ]
+    }
+  ]
+}

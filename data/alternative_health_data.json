@@ -1,0 +1,545 @@
+{
+  "extraction_info": {
+    "total_sources": 3,
+    "extracted_at": "2025-10-05 15:49:08",
+    "successful_extractions": 3,
+    "note": "Real health data from alternative accessible sources"
+  },
+  "sources": [
+    {
+      "source": "NIH News",
+      "url": "https://www.nih.gov/news-events/news-releases",
+      "description": "NIH news and research updates",
+      "extracted_at": "2025-10-05 15:49:10",
+      "sections": [
+        {
+          "title": "HHS Doubles AI-Backed Childhood Cancer Research Funding",
+          "content": [
+            "September 30, 2025 —   Following an Executive Order by President Trump, HHS will increase funding of data-centered pediatric cancer research."
+          ]
+        },
+        {
+          "title": "Secretary Kennedy Swears in Dr. Anthony Letai as Director of the National Cancer Institute",
+          "content": [
+            "September 29, 2025 —   Dr. Letai will serve as NCI’s 18th director."
+          ]
+        },
+        {
+          "title": "NIH establishes nation's first dedicated organoid development center to reduce reliance on animal modeling",
+          "content": [
+            "September 25, 2025 —   The Standardized Organoid Modeling Center aims to produce standardized protocols for organoid research, addressing reproducibility challenges."
+          ]
+        },
+        {
+          "title": "NIH launches $50M Autism Data Science Initiative to unlock causes and improve outcomes",
+          "content": [
+            "September 22, 2025 —   Funded projects will drive discoveries across biology, environment, and autism services."
+          ]
+        },
+        {
+          "title": "Repeated head impacts cause early neuron loss and inflammation in young athletes",
+          "content": [
+            "September 17, 2025 —   NIH-funded study reveals brain changes long before chronic traumatic encephalopathy (CTE) develops."
+          ]
+        },
+        {
+          "title": "NIH launches landmark project on whole-person health and function",
+          "content": [
+            "September 17, 2025 —   Approach involves looking at the whole person—not just separate organs or body systems—and considering multiple factors that promote health."
+          ]
+        },
+        {
+          "title": "NIH launches consortium to reduce risk of stillbirth in the U.S.",
+          "content": [
+            "September 16, 2025 —   More than 60% of the nearly 24,000 stillbirth cases annually remain unexplained."
+          ]
+        },
+        {
+          "title": "Acupuncture treatment improves disabling effects of chronic low back pain in older adults",
+          "content": [
+            "September 12, 2025 —   NIH-funded study supports acupuncture needling as a safe and effective pain treatment for this group."
+          ]
+        },
+        {
+          "title": "Treating opioid addiction in jails improves treatment engagement, reduces overdose deaths and reincarceration",
+          "content": [
+            "September 10, 2025 —   NIH-funded study demonstrates life-saving potential of providing medications for opioid use disorder in carceral settings."
+          ]
+        },
+        {
+          "title": "One dose of antibiotic treats early syphilis as well as three doses",
+          "content": [
+            "September 3, 2025 —   NIH-funded clinical trial shows potential to simplify treatment for early syphilis."
+          ]
+        },
+        {
+          "title": "For the Press",
+          "content": [
+            "Media ContactsNIH-Funded Research (EurekAlert.org)Pick-up Research Articles (NIH Research Matters)Pick-up Health Articles (NIH News in Health)More sources for NIH news and events"
+          ]
+        },
+        {
+          "title": "Connect with Us",
+          "content": [
+            "Subscribe to news releasesRSS Feed"
+          ]
+        },
+        {
+          "title": "Footer menu",
+          "content": [
+            "NIH HomeContact UsEn EspañolVirtual TourVisitor InformationFAQsNIH on Social MediaPress RoomNIH Website Archives"
+          ]
+        },
+        {
+          "title": "Health Information 1",
+          "content": [
+            "News Releases",
+            "Media Inquiries",
+            "NIH on Social Media",
+            "Images and B-roll",
+            "Calendar of Events",
+            "NIH News Publications"
+          ]
+        },
+        {
+          "title": "Health Information 2",
+          "content": [
+            "HHS Doubles AI-Backed Childhood Cancer Research FundingSeptember 30, 2025 —   Following an Executive Order by President Trump, HHS will increase funding of data-centered pediatric cancer research.",
+            "Secretary Kennedy Swears in Dr. Anthony Letai as Director of the National Cancer InstituteSeptember 29, 2025 —   Dr. Letai will serve as NCI’s 18th director.",
+            "NIH establishes nation's first dedicated organoid development center to reduce reliance on animal modelingSeptember 25, 2025 —   The Standardized Organoid Modeling Center aims to produce standardized protocols for organoid research, addressing reproducibility challenges.",
+            "NIH launches $50M Autism Data Science Initiative to unlock causes and improve outcomesSeptember 22, 2025 —   Funded projects will drive discoveries across biology, environment, and autism services.",
+            "Repeated head impacts cause early neuron loss and inflammation in young athletesSeptember 17, 2025 —   NIH-funded study reveals brain changes long before chronic traumatic encephalopathy (CTE) develops.",
+            "NIH launches landmark project on whole-person health and functionSeptember 17, 2025 —   Approach involves looking at the whole person—not just separate organs or body systems—and considering multiple factors that promote health.",
+            "NIH launches consortium to reduce risk of stillbirth in the U.S.September 16, 2025 —   More than 60% of the nearly 24,000 stillbirth cases annually remain unexplained.",
+            "Acupuncture treatment improves disabling effects of chronic low back pain in older adultsSeptember 12, 2025 —   NIH-funded study supports acupuncture needling as a safe and effective pain treatment for this group.",
+            "Treating opioid addiction in jails improves treatment engagement, reduces overdose deaths and reincarcerationSeptember 10, 2025 —   NIH-funded study demonstrates life-saving potential of providing medications for opioid use disorder in carceral settings.",
+            "One dose of antibiotic treats early syphilis as well as three dosesSeptember 3, 2025 —   NIH-funded clinical trial shows potential to simplify treatment for early syphilis."
+          ]
+        },
+        {
+          "title": "Health Information 4",
+          "content": [
+            "Virtual Tour",
+            "Visitor Information",
+            "NIH on Social Media",
+            "NIH Website Archives"
+          ]
+        },
+        {
+          "title": "Health Information 5",
+          "content": [
+            "Privacy Policy",
+            "Disclaimers",
+            "Accessibility",
+            "Freedom of Information Act",
+            "No Fear Act",
+            "HHS Vulnerability Disclosure",
+            "Office of Inspector General",
+            "Nondiscrimination Notice"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "CDC News",
+      "url": "https://www.cdc.gov/media/releases/",
+      "description": "CDC news and health updates",
+      "extracted_at": "2025-10-05 15:49:16",
+      "sections": [
+        {
+          "title": "Search Press Releases",
+          "content": [
+            "Please use the search field to look for specific words or phrases. You can also “filter” by categories (release type), and topic by clicking on the checkboxes."
+          ]
+        }
+      ]
+    },
+    {
+      "source": "WHO News",
+      "url": "https://www.who.int/news",
+      "description": "WHO global health news",
+      "extracted_at": "2025-10-05 15:49:19",
+      "sections": [
+        {
+          "title": "Health Information 1",
+          "content": [
+            "RegionsWHO Regional websitesAfricaAmericasSouth-East AsiaEuropeEastern MediterraneanWestern Pacific",
+            "South-East Asia",
+            "Eastern Mediterranean",
+            "Western Pacific"
+          ]
+        },
+        {
+          "title": "Health Information 2",
+          "content": [
+            "South-East Asia",
+            "Eastern Mediterranean",
+            "Western Pacific"
+          ]
+        },
+        {
+          "title": "Health Information 8",
+          "content": [
+            "ResourcesFact sheetsFacts in picturesMultimediaPodcastsPublicationsQuestions and answersTools and toolkits",
+            "Fact sheets",
+            "Facts in pictures",
+            "Publications",
+            "Questions and answers",
+            "Tools and toolkits"
+          ]
+        },
+        {
+          "title": "Health Information 9",
+          "content": [
+            "Fact sheets",
+            "Facts in pictures",
+            "Publications",
+            "Questions and answers",
+            "Tools and toolkits"
+          ]
+        },
+        {
+          "title": "Health Information 10",
+          "content": [
+            "PopularDengueEndometriosisExcessive heatHerpesMental disordersMpox",
+            "Endometriosis",
+            "Excessive heat",
+            "Mental disorders"
+          ]
+        },
+        {
+          "title": "Health Information 11",
+          "content": [
+            "Endometriosis",
+            "Excessive heat",
+            "Mental disorders"
+          ]
+        },
+        {
+          "title": "Health Information 14",
+          "content": [
+            "RegionsAfricaAmericasEuropeEastern MediterraneanSouth-East AsiaWestern Pacific",
+            "Eastern Mediterranean",
+            "South-East Asia",
+            "Western Pacific"
+          ]
+        },
+        {
+          "title": "Health Information 15",
+          "content": [
+            "Eastern Mediterranean",
+            "South-East Asia",
+            "Western Pacific"
+          ]
+        },
+        {
+          "title": "Health Information 16",
+          "content": [
+            "WHO in countriesData by countryCountry presenceCountry cooperation strategiesCountry office profilesStrengthening country offices",
+            "Data by country",
+            "Country presence",
+            "Country cooperation strategies",
+            "Country office profiles",
+            "Strengthening country offices"
+          ]
+        },
+        {
+          "title": "Health Information 17",
+          "content": [
+            "Data by country",
+            "Country presence",
+            "Country cooperation strategies",
+            "Country office profiles",
+            "Strengthening country offices"
+          ]
+        },
+        {
+          "title": "Health Information 19",
+          "content": [
+            "All newsNews releasesStatementsCampaignsEventsFeature storiesPress conferencesSpeechesCommentariesPhoto library",
+            "News releases",
+            "Feature stories",
+            "Press conferences",
+            "Commentaries",
+            "Photo library"
+          ]
+        },
+        {
+          "title": "Health Information 20",
+          "content": [
+            "News releases",
+            "Feature stories",
+            "Press conferences",
+            "Commentaries",
+            "Photo library"
+          ]
+        },
+        {
+          "title": "Health Information 23",
+          "content": [
+            "Focus onCholeraCoronavirus disease (COVID-19)Greater Horn of AfricaIsrael and occupied Palestinian territoryMpoxSudanUkraine",
+            "Coronavirus disease (COVID-19)",
+            "Greater Horn of Africa",
+            "Israel and occupied Palestinian territory"
+          ]
+        },
+        {
+          "title": "Health Information 24",
+          "content": [
+            "Coronavirus disease (COVID-19)",
+            "Greater Horn of Africa",
+            "Israel and occupied Palestinian territory"
+          ]
+        },
+        {
+          "title": "Health Information 25",
+          "content": [
+            "LatestDisease Outbreak NewsSituation reportsRapid risk assessmentsWeekly Epidemiological Record",
+            "Disease Outbreak News",
+            "Situation reports",
+            "Rapid risk assessments",
+            "Weekly Epidemiological Record"
+          ]
+        },
+        {
+          "title": "Health Information 26",
+          "content": [
+            "Disease Outbreak News",
+            "Situation reports",
+            "Rapid risk assessments",
+            "Weekly Epidemiological Record"
+          ]
+        },
+        {
+          "title": "Health Information 27",
+          "content": [
+            "WHO in emergenciesSurveillanceAlert and responseOperationsResearchFundingPartnersHealth emergency appealsInternational Health RegulationsIndependent Oversight and Advisory Committee",
+            "Surveillance",
+            "Alert and response",
+            "Health emergency appeals",
+            "International Health Regulations",
+            "Independent Oversight and Advisory Committee"
+          ]
+        },
+        {
+          "title": "Health Information 28",
+          "content": [
+            "Surveillance",
+            "Alert and response",
+            "Health emergency appeals",
+            "International Health Regulations",
+            "Independent Oversight and Advisory Committee"
+          ]
+        },
+        {
+          "title": "Health Information 30",
+          "content": [
+            "Data at WHOData hubGlobal Health EstimatesMortalityHealth inequality",
+            "Global Health Estimates",
+            "Health inequality"
+          ]
+        },
+        {
+          "title": "Health Information 31",
+          "content": [
+            "Global Health Estimates",
+            "Health inequality"
+          ]
+        },
+        {
+          "title": "Health Information 32",
+          "content": [
+            "DashboardsTriple Billion ProgressHealth Inequality MonitorDelivery for impactCOVID-19 dashboard",
+            "Triple Billion Progress",
+            "Health Inequality Monitor",
+            "Delivery for impact",
+            "COVID-19 dashboard"
+          ]
+        },
+        {
+          "title": "Health Information 33",
+          "content": [
+            "Triple Billion Progress",
+            "Health Inequality Monitor",
+            "Delivery for impact",
+            "COVID-19 dashboard"
+          ]
+        },
+        {
+          "title": "Health Information 34",
+          "content": [
+            "Data collectionClassificationsSCORESurveysCivil registration and vital statisticsRoutine health information systemsHarmonized health facility assessmentGIS centre for health",
+            "Classifications",
+            "Civil registration and vital statistics",
+            "Routine health information systems",
+            "Harmonized health facility assessment",
+            "GIS centre for health"
+          ]
+        },
+        {
+          "title": "Health Information 35",
+          "content": [
+            "Classifications",
+            "Civil registration and vital statistics",
+            "Routine health information systems",
+            "Harmonized health facility assessment",
+            "GIS centre for health"
+          ]
+        },
+        {
+          "title": "Health Information 36",
+          "content": [
+            "ReportsWorld Health StatisticsUHC global monitoring report",
+            "World Health Statistics",
+            "UHC global monitoring report"
+          ]
+        },
+        {
+          "title": "Health Information 37",
+          "content": [
+            "World Health Statistics",
+            "UHC global monitoring report"
+          ]
+        },
+        {
+          "title": "Health Information 39",
+          "content": [
+            "About WHOPartnershipsCommittees and advisory groupsCollaborating centresTechnical teamsOrganizational structureWho we are",
+            "Partnerships",
+            "Committees and advisory groups",
+            "Collaborating centres",
+            "Technical teams",
+            "Organizational structure"
+          ]
+        },
+        {
+          "title": "Health Information 40",
+          "content": [
+            "Partnerships",
+            "Committees and advisory groups",
+            "Collaborating centres",
+            "Technical teams",
+            "Organizational structure"
+          ]
+        },
+        {
+          "title": "Health Information 41",
+          "content": [
+            "Our workActivitiesInitiativesGeneral Programme of WorkWHO Academy",
+            "Initiatives",
+            "General Programme of Work",
+            "WHO Academy"
+          ]
+        },
+        {
+          "title": "Health Information 42",
+          "content": [
+            "Initiatives",
+            "General Programme of Work",
+            "WHO Academy"
+          ]
+        },
+        {
+          "title": "Health Information 43",
+          "content": [
+            "FundingInvestment in WHOWHO Foundation",
+            "Investment in WHO",
+            "WHO Foundation"
+          ]
+        },
+        {
+          "title": "Health Information 44",
+          "content": [
+            "Investment in WHO",
+            "WHO Foundation"
+          ]
+        },
+        {
+          "title": "Health Information 45",
+          "content": [
+            "AccountabilityExternal auditFinancial statementsInternal audit and investigationsProgramme BudgetResults reports",
+            "External audit",
+            "Financial statements",
+            "Internal audit and investigations",
+            "Programme Budget",
+            "Results reports"
+          ]
+        },
+        {
+          "title": "Health Information 46",
+          "content": [
+            "External audit",
+            "Financial statements",
+            "Internal audit and investigations",
+            "Programme Budget",
+            "Results reports"
+          ]
+        },
+        {
+          "title": "Health Information 47",
+          "content": [
+            "GovernanceGoverning bodiesWorld Health AssemblyExecutive BoardMember States Portal",
+            "Governing bodies",
+            "World Health Assembly",
+            "Executive Board",
+            "Member States Portal"
+          ]
+        },
+        {
+          "title": "Health Information 48",
+          "content": [
+            "Governing bodies",
+            "World Health Assembly",
+            "Executive Board",
+            "Member States Portal"
+          ]
+        },
+        {
+          "title": "Health Information 50",
+          "content": [
+            "RegionsAfricaAmericasEastern MediterraneanEuropeSouth-East AsiaWestern Pacific",
+            "Eastern Mediterranean",
+            "South-East Asia",
+            "Western Pacific",
+            "PoliciesCybersecurityEthicsInformation disclosurePermissions and licensingPreventing sexual exploitationTerms of use",
+            "Cybersecurity",
+            "Information disclosure",
+            "Permissions and licensing",
+            "Preventing sexual exploitation",
+            "Terms of use",
+            "About usCareersFrequently asked questionsLibraryProcurementPublications",
+            "Frequently asked questions",
+            "Procurement",
+            "Publications"
+          ]
+        },
+        {
+          "title": "Health Information 51",
+          "content": [
+            "Eastern Mediterranean",
+            "South-East Asia",
+            "Western Pacific"
+          ]
+        },
+        {
+          "title": "Health Information 52",
+          "content": [
+            "Cybersecurity",
+            "Information disclosure",
+            "Permissions and licensing",
+            "Preventing sexual exploitation",
+            "Terms of use"
+          ]
+        },
+        {
+          "title": "Health Information 53",
+          "content": [
+            "Frequently asked questions",
+            "Procurement",
+            "Publications"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "source": "Comprehensive Pregnancy Categories Database",
+  "description": "FDA pregnancy risk categories and safety information for medications",
+  "extracted_at": "2025-10-05 16:23:22",
+  "pregnancy_categories": [
+    {
+      "category": "Category A",
+      "description": "Adequate and well-controlled studies have failed to demonstrate a risk to the fetus in the first trimester of pregnancy",
+      "risk_level": "Lowest Risk",
+      "examples": [
+        "Folic acid",
+        "Thyroid hormone (when used appropriately)",
+        "Some vitamins and minerals"
+      ],
+      "notes": "Very few medications fall into this category"
+    },
+    {
+      "category": "Category B",
+      "description": "Animal reproduction studies have failed to demonstrate a risk to the fetus and there are no adequate and well-controlled studies in pregnant women",
+      "risk_level": "Low Risk",
+      "examples": [
+        "Some antibiotics (penicillin, amoxicillin)",
+        "Some antihistamines",
+        "Some pain medications"
+      ],
+      "notes": "Generally considered safe during pregnancy"
+    },
+    {
+      "category": "Category C",
+      "description": "Animal reproduction studies have shown an adverse effect on the fetus and there are no adequate and well-controlled studies in humans",
+      "risk_level": "Moderate Risk",
+      "examples": [
+        "Lamotrigine (Lamictal)",
+        "Levetiracetam (Keppra)",
+        "Many other medications"
+      ],
+      "notes": "Use only if potential benefit justifies potential risk"
+    },
+    {
+      "category": "Category D",
+      "description": "There is positive evidence of human fetal risk, but the benefits from use in pregnant women may be acceptable despite the risk",
+      "risk_level": "High Risk",
+      "examples": [
+        "Valproic acid (Depakote)",
+        "Carbamazepine (Tegretol)",
+        "Phenytoin (Dilantin)"
+      ],
+      "notes": "Use only if no safer alternative exists"
+    },
+    {
+      "category": "Category X",
+      "description": "Studies in animals or humans have demonstrated fetal abnormalities and/or there is positive evidence of human fetal risk",
+      "risk_level": "Contraindicated",
+      "examples": [
+        "Isotretinoin (Accutane)",
+        "Thalidomide",
+        "Some chemotherapy drugs"
+      ],
+      "notes": "Should not be used during pregnancy"
+    }
+  ],
+  "epilepsy_medication_categories": [
+    {
+      "medication": "Lamotrigine",
+      "category": "Category C",
+      "safety_notes": "Generally considered safer for pregnancy, may require dose adjustments"
+    },
+    {
+      "medication": "Levetiracetam",
+      "category": "Category C",
+      "safety_notes": "Generally considered safer for pregnancy, good seizure control"
+    },
+    {
+      "medication": "Valproic Acid",
+      "category": "Category D",
+      "safety_notes": "High risk of birth defects, should be avoided if possible"
+    },
+    {
+      "medication": "Carbamazepine",
+      "category": "Category D",
+      "safety_notes": "Risk of neural tube defects, requires folic acid"
+    },
+    {
+      "medication": "Phenytoin",
+      "category": "Category D",
+      "safety_notes": "Risk of fetal hydantoin syndrome, requires monitoring"
+    }
+  ],
+  "general_guidelines": [
+    "Pre-pregnancy counseling is essential",
+    "Folic acid supplementation (5mg daily) before conception",
+    "Regular monitoring of medication levels",
+    "Multidisciplinary team approach",
+    "Consider medication changes before pregnancy if possible",
+    "Detailed anomaly scan at 18-20 weeks gestation",
+    "Close monitoring throughout pregnancy"
+  ]
+}

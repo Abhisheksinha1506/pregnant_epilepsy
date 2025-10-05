@@ -1,0 +1,45 @@
+{
+  "extraction_info": {
+    "total_sources": 3,
+    "extracted_at": "2025-10-05 15:52:58",
+    "successful_extractions": 3,
+    "note": "Real drug safety data from alternative accessible sources"
+  },
+  "sources": [
+    {
+      "source": "NIH Drug Information",
+      "url": "https://www.nih.gov/news-events/news-releases",
+      "description": "NIH news and drug research updates",
+      "extracted_at": "2025-10-05 15:52:58",
+      "drug_safety_info": [
+        {
+          "title": "Drug Safety Resources and Links",
+          "content": [
+            "Treating opioid addiction in jails improves treatment engagement, reduces overdose deaths and reincarcerationSeptember 10, 2025 —   NIH-funded study demonstrates life-saving potential of providing medications for opioid use disorder in carceral settings.: https://www.nih.gov/news-events/news-releases/treating-opioid-addiction-jails-improves-treatment-engagement-reduces-overdose-deaths-reincarceration"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "CDC Drug Safety",
+      "url": "https://www.cdc.gov/media/releases/",
+      "description": "CDC drug safety and health updates",
+      "extracted_at": "2025-10-05 15:53:01",
+      "drug_safety_info": []
+    },
+    {
+      "source": "WHO Drug Safety",
+      "url": "https://www.who.int/news",
+      "description": "WHO global drug safety information",
+      "extracted_at": "2025-10-05 15:53:05",
+      "drug_safety_info": [
+        {
+          "title": "Drug Safety Resources and Links",
+          "content": [
+            "WHO Drug Information - Volume 39, No. 3: /publications/i/item/9789240115507"
+          ]
+        }
+      ]
+    }
+  ]
+}

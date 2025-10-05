@@ -1,0 +1,1756 @@
+{
+  "checked": 411,
+  "ok": 247,
+  "broken": [
+    {
+      "url": "https://api.example.com/data",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "client/src/pages/DataSources.tsx"
+      ]
+    },
+    {
+      "url": "https://api.example.com/endpoint",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "client/src/pages/ApiTester.tsx"
+      ]
+    },
+    {
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0701617\\",
+      "status": 403,
+      "finalUrl": "https://www.nejm.org/doi/full/10.1056/NEJMoa0701617/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0df82a1f0363d543.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0e11357a4dd73664.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0fca5985d5c4f699.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.1276b4ed9ae9d422.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.19b9001d7b7cabf7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.265aa28eb9216ec0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.284f1667d90b11d0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d08799965811fb1.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d648cb4daef8cc0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.33afefc52e16f07c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35af56c60e07501e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35cc9ee5e4a7d5cd.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.3cc23841af8a25b5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5030f4cb9decb7f4.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54d1fdb854fd9886.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5b4abed345b956b0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.64ae5cf54aeaf12b.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.6b9339d191e91027.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.8218aae9cc3ca6e7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.92e078f67129017c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f35dadfd328946f.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f9ca5613aa4d20d.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a4272a9fc12e1e31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.aa997d169e9c4ce6.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4c97e2a5c2dc477.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.bb3c22521dde020e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c57bb90c32fd1c2e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c7ec8a64ccb65a39.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.cd3dc5f81a02f8ab.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ce7e57f7cc80fe48.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.d651f99f947b1f55.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.dc02bb294646d0f5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e32c81ef345cd1e2.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e431da20743279fe.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e5b6c2afad564fce.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eee2f399a96c09ef.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eff817e8a1cdeaa2.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://api.fda.gov\\",
+      "status": 404,
+      "finalUrl": "https://api.fda.gov/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/api/external/cdc/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/external/dailymed/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/external/openfda/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/medications/enhanced/route.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/living-epilepsy/women-and-epilepsy/pregnancy\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/living-epilepsy/women-and-epilepsy/pregnancy/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0df82a1f0363d543.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0e11357a4dd73664.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0fca5985d5c4f699.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.1276b4ed9ae9d422.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.19b9001d7b7cabf7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.265aa28eb9216ec0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.284f1667d90b11d0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d08799965811fb1.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d648cb4daef8cc0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.33afefc52e16f07c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35af56c60e07501e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35cc9ee5e4a7d5cd.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.3cc23841af8a25b5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5030f4cb9decb7f4.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54d1fdb854fd9886.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5b4abed345b956b0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.64ae5cf54aeaf12b.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.6b9339d191e91027.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.8218aae9cc3ca6e7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.92e078f67129017c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f35dadfd328946f.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f9ca5613aa4d20d.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a4272a9fc12e1e31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.aa997d169e9c4ce6.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4c97e2a5c2dc477.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.bb3c22521dde020e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c57bb90c32fd1c2e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c7ec8a64ccb65a39.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.cd3dc5f81a02f8ab.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ce7e57f7cc80fe48.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.d651f99f947b1f55.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.dc02bb294646d0f5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e32c81ef345cd1e2.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e431da20743279fe.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e5b6c2afad564fce.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eee2f399a96c09ef.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eff817e8a1cdeaa2.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/api/external/cdc/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/external/dailymed/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/external/openfda/route.js",
+        "seizure-pregnancy-navigator/.next/server/app/api/medications/enhanced/route.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.org.uk/info/mental-health\\",
+      "status": 404,
+      "finalUrl": "https://www.epilepsy.org.uk/info/mental-health/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0df82a1f0363d543.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0e11357a4dd73664.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0fca5985d5c4f699.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.1276b4ed9ae9d422.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.19b9001d7b7cabf7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.265aa28eb9216ec0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.284f1667d90b11d0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d08799965811fb1.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d648cb4daef8cc0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.33afefc52e16f07c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35af56c60e07501e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35cc9ee5e4a7d5cd.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.3cc23841af8a25b5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5030f4cb9decb7f4.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54d1fdb854fd9886.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5b4abed345b956b0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.64ae5cf54aeaf12b.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.6b9339d191e91027.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.8218aae9cc3ca6e7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.92e078f67129017c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f35dadfd328946f.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f9ca5613aa4d20d.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a4272a9fc12e1e31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.aa997d169e9c4ce6.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4c97e2a5c2dc477.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.bb3c22521dde020e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c57bb90c32fd1c2e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c7ec8a64ccb65a39.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.cd3dc5f81a02f8ab.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ce7e57f7cc80fe48.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.d651f99f947b1f55.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.dc02bb294646d0f5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e32c81ef345cd1e2.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e431da20743279fe.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e5b6c2afad564fce.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eee2f399a96c09ef.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eff817e8a1cdeaa2.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Clinical/MidwiferyAndObstetrics/EpilepsyInPregnancyClinicalGuideline.pdf\\",
+      "status": 404,
+      "finalUrl": "https://doclibrary-rcht.cornwall.nhs.uk/DocumentsLibrary/RoyalCornwallHospitalsTrust/Clinical/MidwiferyAndObstetrics/EpilepsyInPregnancyClinicalGuideline.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/living-epilepsy/first-aid\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/living-epilepsy/first-aid/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0df82a1f0363d543.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0e11357a4dd73664.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.0fca5985d5c4f699.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.1276b4ed9ae9d422.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.19b9001d7b7cabf7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.265aa28eb9216ec0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.284f1667d90b11d0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d08799965811fb1.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.2d648cb4daef8cc0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.33afefc52e16f07c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35af56c60e07501e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.35cc9ee5e4a7d5cd.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.3cc23841af8a25b5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5030f4cb9decb7f4.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54d1fdb854fd9886.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5b4abed345b956b0.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.64ae5cf54aeaf12b.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.6b9339d191e91027.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.8218aae9cc3ca6e7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.92e078f67129017c.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f35dadfd328946f.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.9f9ca5613aa4d20d.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a4272a9fc12e1e31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.aa997d169e9c4ce6.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4c97e2a5c2dc477.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.bb3c22521dde020e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c57bb90c32fd1c2e.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.c7ec8a64ccb65a39.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.cd3dc5f81a02f8ab.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ce7e57f7cc80fe48.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.d651f99f947b1f55.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.dc02bb294646d0f5.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e32c81ef345cd1e2.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e431da20743279fe.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.e5b6c2afad564fce.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eee2f399a96c09ef.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.eff817e8a1cdeaa2.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.rcog.org.uk/media/w24n1552/epilepsy-in-pregnancy.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.rcog.org.uk/pageNotFound",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.rcog.org.uk/media/rzldnacf/gtg68_epilepsy.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.rcog.org.uk/pageNotFound",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://nctr-crs.fda.gov/fdalabel/ui/search\\",
+      "status": 404,
+      "finalUrl": "https://nctr-crs.fda.gov/fdalabel/ui/search/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://open.fda.gov/apis/drug/label/\\",
+      "status": 403,
+      "finalUrl": "https://open.fda.gov/apis/drug/label//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.271dece973402086.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.412e3a806d855583.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.5389d8c5efa4a980.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.797f29a10c580ad3.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.a8d796fe3685df82.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://github.com/mourner/quickselect\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/mourner/quickselect/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/d3-array.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/MikeMcl/decimal.js-light\\r\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/MikeMcl/decimal.js-light/r/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/decimal.js-light.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/framer/motion/issues/2270\\nconst",
+      "status": 404,
+      "finalUrl": "https://github.com/framer/motion/issues/2270/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/framer-motion.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/gre/bezier-easing/blob/master/src/index.js\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/gre/bezier-easing/blob/master/src/index.js/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/framer-motion.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/gre/bezier-easing/blob/master/LICENSE\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/gre/bezier-easing/blob/master/LICENSE/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/framer-motion.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "http://codepen.io/osublake/pen/xGVVaN\\nconst",
+      "status": 403,
+      "finalUrl": "https://codepen.io/osublake/pen/xGVVaN/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/framer-motion.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://gist.github.com/mjackson/5311256\\nfunction",
+      "status": 404,
+      "finalUrl": "https://gist.github.com/mjackson/5311256/nfunction",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/framer-motion.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "http://mathworld.wolfram.com/Circle-LineIntersection.html\\nfunction",
+      "status": 404,
+      "finalUrl": "https://mathworld.wolfram.com/Circle-LineIntersection.html/nfunction",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/d3-shape.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/connect\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/connect/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js"
+      ]
+    },
+    {
+      "url": "https://learn.epilepsy.com/\\",
+      "status": 403,
+      "finalUrl": "https://learn.epilepsy.com//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/2000/svg\\",
+      "status": 403,
+      "finalUrl": "http://www.w3.org/2000/svg/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/lucide-react.js",
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://n\\",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app-pages-internals.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://code.google.com/p/chromium/issues/detail?id=446051\\n",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/chromium/issues/detail?id=446051%5Cn",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/35\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/35/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/35\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/35/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://crbug.com/453847\\n//",
+      "status": 404,
+      "finalUrl": "https://crbug.com/453847/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Node.nodeType\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Node.nodeType/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/20\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/20/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en/docs/Web/API/Element/matches\\nvar",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Element/matches/nvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/21\\nvar",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/21/nvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://stackoverflow.com/a/8097055/515124\\n",
+      "status": 404,
+      "finalUrl": "https://stackoverflow.com/a/8097055/515124/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/1999/xlink\\",
+      "status": 403,
+      "finalUrl": "https://www.w3.org/1999/xlink/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/17\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/17/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/82\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/82/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/20\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/20/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/21\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/21/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/CSS/overflow\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/overflow/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/jquery/jquery-ui/blob/master/ui/core.js#L109-L114\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/jquery/jquery-ui/blob/main/ui/core.js",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/9282058/\\n",
+      "status": 404,
+      "finalUrl": "https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/9282058/n?form=MA13LH",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Document/getElementsByName\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/jquery/jquery-ui/blob/master/ui/core.js#L88-L107\\nfunction",
+      "status": 404,
+      "finalUrl": "https://github.com/jquery/jquery-ui/blob/main/ui/core.js",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Window/frameElement\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Window/frameElement/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/HTMLMapElement\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLMapElement/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/HTML/Element/map\\n//",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/map/n_",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://code.google.com/p/chromium/issues/detail?id=586191\\n",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/chromium/issues/detail?id=586191%5Cn",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://stackoverflow.com/a/23047888/515124\\n",
+      "status": 404,
+      "finalUrl": "https://stackoverflow.com/a/23047888/515124/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/NodeFilter\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/NodeFilter/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://stereochro.me/ideas/detecting-broken-images-js\\n",
+      "status": 404,
+      "finalUrl": "https://stereochro.me/ideas/detecting-broken-images-js/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Document/createTreeWalker\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Document/createTreeWalker/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/5\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/5/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/6\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/6/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/keithamus/jwerty/blob/master/jwerty.js\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/keithamus/jwerty/blob/master/jwerty.js/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/medialize/ally.js/issues/146\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/medialize/ally.js/issues/146/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/HTMLElement.tabIndex\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement.tabIndex/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/create-react-app/blob/7b1a32be6ec9f99a6c9a3c66813f3ac09c4736b9/packages/react-dev-utils/formatWebpackMessages.js\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/create-react-app/blob/7b1a32be6ec9f99a6c9a3c66813f3ac09c4736b9/packages/react-dev-utils/formatWebpackMessages.js/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://\\",
+      "status": 0,
+      "error": "Failed to parse URL from http://\\",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://\\",
+      "status": 0,
+      "error": "Failed to parse URL from https://\\",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Node.compareDocumentPosition\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Node.compareDocumentPosition/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/webpack/webpack/blob/master/lib/ModuleError.js\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/webpack/webpack/blob/main/lib/ModuleError.js/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/vercel/next.js/issues/53911\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/vercel/next.js/issues/53911/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/docs/Web/API/Node.compareDocumentPosition\\n//",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/Node.compareDocumentPosition/n_",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/public-next-folder-conflict`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/public-next-folder-conflict%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/404-get-initial-props`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/404-get-initial-props%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/gssp-export`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/gssp-export%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/gssp-component-member`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/gssp-component-member%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/non-standard-node-env`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/non-standard-node-env%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/ssg-fallback-true-export`;\\nconst",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/ssg-fallback-true-export%60;/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/app/api-reference/functions/unstable_cache`",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/app/api-reference/functions/unstable_cache%60",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app-pages-internals.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/ppr-caught-error`;\\n",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/ppr-caught-error%60;/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app-pages-internals.js"
+      ]
+    },
+    {
+      "url": "https://nextjs.org/docs/messages/dynamic-server-error`",
+      "status": 404,
+      "finalUrl": "https://nextjs.org/docs/messages/dynamic-server-error%60",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app-pages-internals.js"
+      ]
+    },
+    {
+      "url": "https://github.com/sindresorhus/escape-string-regexp\\n\\nObject.defineProperty(exports",
+      "status": 404,
+      "finalUrl": "https://github.com/sindresorhus/escape-string-regexp/n/nObject.defineProperty(exports",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://blank",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js"
+      ]
+    },
+    {
+      "url": "https://bugs.chromium.org/p/v8/issues/detail?id=4118\\n\\t\\tvar",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/v8/issues/detail?id=4118\\n\\t\\tvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/object-assign.js"
+      ]
+    },
+    {
+      "url": "https://bugs.chromium.org/p/v8/issues/detail?id=3056\\n\\t\\tvar",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/v8/issues/detail?id=3056\\n\\t\\tvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/object-assign.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/blob/d4e78c42a94be027b4dc7ed2659a5fddfbf9bd4e/packages/react/src/ReactFetch.js\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/blob/d4e78c42a94be027b4dc7ed2659a5fddfbf9bd4e/packages/react/src/ReactFetch.js/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js"
+      ]
+    },
+    {
+      "url": "http://www.cse.yorku.ca/~oz/hash.html\\n//",
+      "status": 404,
+      "finalUrl": "http://www.cse.yorku.ca/~oz/hash.html/n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/next.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://fb.me/prop-types-in-prod\\n",
+      "status": 400,
+      "finalUrl": "https://www.facebook.com/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/prop-types.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/prop-types.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://stackoverflow.com/a/51127130/4671932\\n",
+      "status": 404,
+      "finalUrl": "https://stackoverflow.com/a/51127130/4671932/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/react-transition-group.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/recharts/recharts/issues/5415\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/recharts/recharts/issues/5415/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/recharts/recharts/issues/3669\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/recharts/recharts/issues/3669/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/recharts/recharts/issues/4717\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/recharts/recharts/issues/4717/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/recharts/recharts/issues/2143\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/recharts/recharts/issues/2143/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/66042\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/DefinitelyTyped/DefinitelyTyped/discussions/66042/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Content_Security_Policy\\n",
+      "status": 404,
+      "finalUrl": "https://en.wikipedia.org/wiki/Content_Security_Policy/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/d3/d3-scale/blob/main/LICENSE\\n//\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/d3/d3-scale/blob/main/LICENSE/n///n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/victory-vendor.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/d3/d3-shape/blob/main/LICENSE\\n//\\n//",
+      "status": 404,
+      "finalUrl": "https://github.com/d3/d3-shape/blob/main/LICENSE/n///n//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/victory-vendor.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/13610\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/13610/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/19099\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/19099/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/app/emergency/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/knowledge/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/medications/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/pregnancy/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/reports/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/support/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/framer/motion/issues/2023\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/framer/motion/issues/2023/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/app/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/MikeMcl/decimal.js-light/LICENCE",
+      "status": 404,
+      "finalUrl": "https://github.com/MikeMcl/decimal.js-light/LICENCE",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/type/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/server/vendor-chunks/recharts.js",
+        "seizure-pregnancy-navigator/.next/static/chunks/app/tracking/page.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/metro/blob/d6b9685c730d0d63577db40f41369157f28dfa3a/packages/metro/src/lib/polyfills/require.js\\nconst",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/metro/blob/d6b9685c730d0d63577db40f41369157f28dfa3a/packages/metro/src/lib/polyfills/require.js/nconst",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/17626\\n\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/17626/n/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/20417.\\n\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/20417./n/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/20756\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/20756/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/3877\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/3877/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/11768\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/11768/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/7253\\n\\nfunction",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/7253/n/nfunction",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://bugs.chromium.org/p/chromium/issues/detail?id=608416\\n",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/chromium/issues/detail?id=608416\\n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32\\n\\nvar",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/clz32/n/nvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.microsoft.com/microsoft-edge/platform/issues/101525/\\n\\n",
+      "status": 404,
+      "finalUrl": "https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/101525/n/n?form=MA13LH",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/mozilla/gecko-dev/blob/4e638efc71/layout/style/test/property_database.js\\nvar",
+      "status": 404,
+      "finalUrl": "https://github.com/mozilla/gecko-dev/blob/4e638efc71/layout/style/test/property_database.js/nvar",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/2012/WD-html5-20121025/the-input-element.html\\n",
+      "status": 404,
+      "finalUrl": "https://html.spec.whatwg.org/multipage/404.html",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://w3c.github.io/webcomponents/spec/custom/#custom-elements-core-concepts\\n",
+      "status": 404,
+      "finalUrl": "https://w3c.github.io/webcomponents/spec/custom/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/12506\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/12506/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://reactjs.org/link/derived-state\\\\n",
+      "status": 404,
+      "finalUrl": "https://legacy.reactjs.org/link/derived-state/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.quirksmode.org/js/events_properties.html\\n\\n\\n",
+      "status": 404,
+      "finalUrl": "http://www.quirksmode.org/js/events_properties.html/n/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/22459\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/22459/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://reactjs.org/link/rules-of-hooks\\\\n\\\\n",
+      "status": 404,
+      "finalUrl": "https://legacy.reactjs.org/link/rules-of-hooks/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/12995\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/12995/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/13188\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/13188/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/13688\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/13688/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/16734\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/16734/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/16585\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/16585/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/14365\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/14365/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://bugs.chromium.org/p/v8/issues/detail?id=8538\\n",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/v8/issues/detail?id=8538\\n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/12502\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/12502/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/1698\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/1698/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/DOM-Level-3-Events/\\n",
+      "status": 400,
+      "finalUrl": "https://www.w3.org/TR/DOM-Level-3-Events//n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/clipboard-apis/\\n",
+      "status": 400,
+      "finalUrl": "https://www.w3.org/TR/clipboard-apis//n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/pointerevents/\\n",
+      "status": 400,
+      "finalUrl": "https://www.w3.org/TR/pointerevents//n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/AnimationEvent/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/touch-events/\\n",
+      "status": 400,
+      "finalUrl": "https://www.w3.org/TR/touch-events//n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "http://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105\\n",
+      "status": 404,
+      "finalUrl": "https://www.w3.org/TR/2013/WD-DOM-Level-3-Events-20131105/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent\\n",
+      "status": 404,
+      "finalUrl": "https://developer.mozilla.org/en-US/docs/Web/API/TransitionEvent/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/708.\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/708./n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://code.google.com/p/chromium/issues/detail?id=355103\\n",
+      "status": 404,
+      "finalUrl": "https://bugs.chromium.org/p/chromium/issues/detail?id=355103%5Cn",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/19651\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/19651/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/11807\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/11807/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://www.quirksmode.org/blog/archives/2010/09/click_event_del.html\\n",
+      "status": 404,
+      "finalUrl": "https://www.quirksmode.org/blog/archives/2010/09/click_event_del.html/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://github.com/facebook/react/issues/11918\\n\\n\\n",
+      "status": 404,
+      "finalUrl": "https://github.com/facebook/react/issues/11918/n/n/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://electronjs.org/docs/api/webview-tag\\n",
+      "status": 404,
+      "finalUrl": "https://www.electronjs.org/docs/latest/api/webview-tag/n",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/main-app.js"
+      ]
+    },
+    {
+      "url": "https://a",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://a/c%20d?a=1&c=3",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://a@b",
+      "status": 0,
+      "error": "Request cannot be constructed from a URL that includes credentials: https://a@b",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://тест",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://a#б",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://x",
+      "status": 0,
+      "error": "fetch failed",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/chunks/polyfills.js"
+      ]
+    },
+    {
+      "url": "https://tools.cdc.gov/medialibrary/index.aspx#/media/id/420494\\",
+      "status": 503,
+      "finalUrl": "https://tools.cdc.gov/medialibrary/index.aspx",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.cdc.gov/reproductive-health/es/about/acerca-de-la-salud-reproductiva.html\\",
+      "status": 404,
+      "finalUrl": "https://www.cdc.gov/reproductive-health/es/about/acerca-de-la-salud-reproductiva.html/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.aan.com/siteassets/home-page/policy-and-guidelines/guidelines/guidelines-and-measures-open-for-public-comment/epilepsy-and-pregnancy_draft.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.aan.com/siteassets/home-page/policy-and-guidelines/guidelines/guidelines-and-measures-open-for-public-comment/epilepsy-and-pregnancy_draft.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Epilepsy/7017-1-Seizure-Diary.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.wsh.nhs.uk/CMS-Documents/Patient-leaflets/Epilepsy/7017-1-Seizure-Diary.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://epilepsysociety.org.uk/sites/default/files/2020-08/seizure-diary.pdf\\",
+      "status": 404,
+      "finalUrl": "https://epilepsysociety.org.uk/sites/default/files/2020-08/seizure-diary.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/tools-resources/seizure-medication-list\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/tools-resources/seizure-medication-list/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.46425e18260fdf59.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.4a2ff2ba9812cae7.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.54f081d9a1f77efc.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.b4ca23ed910fb893.hot-update.js",
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0701617",
+      "status": 403,
+      "finalUrl": "https://www.nejm.org/doi/full/10.1056/NEJMoa0701617",
+      "files": [
+        "seizure-pregnancy-navigator/app/knowledge/page.tsx"
+      ]
+    },
+    {
+      "url": "https://mothertobaby.org/fact-sheets/valproic-acid-depakote-depakene-divalproex-sodium/pdf/\\",
+      "status": 404,
+      "finalUrl": "https://mothertobaby.org/fact-sheets/valproic-acid-depakote-depakene-divalproex-sodium/pdf//",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.org.uk/app/uploads/2022/05/Seizure-diary.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.epilepsy.org.uk/app/uploads/2022/05/Seizure-diary.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.ibe-epilepsy.org/downloads/EpilepsyPregnancyToolkit.pdf\\",
+      "status": 404,
+      "finalUrl": "https://www.ibe-epilepsy.org/downloads/EpilepsyPregnancyToolkit.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/living-epilepsy/women/pregnancy\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/living-epilepsy/women/pregnancy/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/sites/default/files/2020-10/WomenWithEpilepsyChecklist.pdf\\",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/sites/default/files/2020-10/WomenWithEpilepsyChecklist.pdf/",
+      "files": [
+        "seizure-pregnancy-navigator/.next/static/webpack/app/knowledge/page.ea1d688b3ca5bb31.hot-update.js"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/living-epilepsy/women-and-epilepsy/pregnancy",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/living-epilepsy/women-and-epilepsy/pregnancy",
+      "files": [
+        "seizure-pregnancy-navigator/app/knowledge/page.tsx"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.org.uk/info/mental-health",
+      "status": 404,
+      "finalUrl": "https://www.epilepsy.org.uk/info/mental-health",
+      "files": [
+        "seizure-pregnancy-navigator/app/knowledge/page.tsx"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/living-epilepsy/first-aid",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/living-epilepsy/first-aid",
+      "files": [
+        "seizure-pregnancy-navigator/app/knowledge/page.tsx"
+      ]
+    },
+    {
+      "url": "https://api.fda.gov",
+      "status": 404,
+      "finalUrl": "https://api.fda.gov/",
+      "files": [
+        "seizure-pregnancy-navigator/lib/api-services.ts"
+      ]
+    },
+    {
+      "url": "http://localhost:${PORT}`",
+      "status": 0,
+      "error": "Failed to parse URL from http://localhost:${PORT}`",
+      "files": [
+        "server/index.js"
+      ]
+    },
+    {
+      "url": "https://learn.epilepsy.com/",
+      "status": 403,
+      "finalUrl": "https://learn.epilepsy.com/",
+      "files": [
+        "seizure-pregnancy-navigator/app/support/page.tsx"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com/connect",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/connect",
+      "files": [
+        "seizure-pregnancy-navigator/app/support/page.tsx"
+      ]
+    },
+    {
+      "url": "https://www.epilepsy.com",
+      "status": 403,
+      "finalUrl": "https://www.epilepsy.com/",
+      "files": [
+        "seizure-pregnancy-navigator/lib/api-services.ts"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+  "extraction_info": {
+    "total_sources": 5,
+    "extracted_at": "2025-10-05 15:43:19",
+    "successful_extractions": 3
+  },
+  "sources": [
+    {
+      "source": "American Pregnancy Association",
+      "url": "https://americanpregnancy.org/",
+      "extracted_at": "2025-10-05 15:43:28",
+      "sections": [
+        {
+          "title": "Ovulation Calendar",
+          "content": [
+            "Do you know when you are most fertile? Let's calculate your ovulation days."
+          ]
+        },
+        {
+          "title": "Pregnancy Due Date Calculator",
+          "content": [
+            "When is your due date? Let's estimate how far along you are and provide weekly development info."
+          ]
+        },
+        {
+          "title": "Pregnancy Quiz",
+          "content": [
+            "Are you pregnant?Find out with our Pregnancy Quiz."
+          ]
+        },
+        {
+          "title": "Pregnancy Quiz",
+          "content": [
+            "Are you pregnant?Find out with our Pregnancy Quiz."
+          ]
+        },
+        {
+          "title": "Pregnancy Questions Center",
+          "content": [
+            "Every pregnancy comes with questions and we have collected the most common pregnancy questions and trusted information for each."
+          ]
+        },
+        {
+          "title": "Pregnancy Questions Center",
+          "content": [
+            "Every pregnancy comes with questions! We collected the most common pregnancy questions & trusted information for each."
+          ]
+        },
+        {
+          "title": "Baby Names Directory",
+          "content": [
+            "Have you picked a baby name yet? Sort by types of names to make a list of your favorite baby names or find the perfect one."
+          ]
+        },
+        {
+          "title": "Provider Search",
+          "content": [
+            "Find free or discounted local pregnancy resources available to help you on your maternity journey."
+          ]
+        },
+        {
+          "title": "Did You Just Find Out? Support is Key!",
+          "content": [
+            "Did you just find out you were expecting twins, triplets or more? It’s news that comes with a range of…"
+          ]
+        },
+        {
+          "title": "Beyond Baby Blues: Addressing 5 Physical Changes After Childbirth",
+          "content": [
+            "When it is said that motherhood changes you, they are very right. Your baby now takes center stage in your…"
+          ]
+        },
+        {
+          "title": "How Coffee Beans are Decaffeinated Matters - Why choose Swiss Water Process Decaf?",
+          "content": [
+            "Millions of Moms love the taste, warmth and comfort of a great cup of coffee. Ideally organic coffee is what…"
+          ]
+        },
+        {
+          "title": "List 1",
+          "content": [
+            "LOWEST Mercury of Any Brand - Every Tuna & Salmon Tested",
+            "Rich in Omega-3s for Heart, Brain, and Overall Health",
+            "The Perfect Seafood Protein for Every Stage of Life",
+            "Wild, Sustainably Sourced & Plastic Neutral"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "NIH Pregnancy",
+      "url": "https://www.nichd.nih.gov/health/topics/pregnancy",
+      "extracted_at": "2025-10-05 15:43:33",
+      "sections": [
+        {
+          "title": "Related A-Z Topics",
+          "content": [
+            "Breastfeeding and Breast MilkPre-Pregnancy Care and Prenatal CarePreterm Labor and Birth"
+          ]
+        },
+        {
+          "title": "AZ Topic Mobile Nav",
+          "content": [
+            "PregnancyAboutWhat are some common signs of pregnancy?How do I know if I’m pregnant?What is prenatal care and why is it important?What are some common complications of pregnancy?What is a high-risk pregnancy?What infections can affect pregnancy?What is labor?What is a cesarean delivery?What should I know about postpartum despression?NICHD Research InformationResearch GoalsActivities and AdvancesFind a StudyMore InformationOther FAQsResources"
+          ]
+        },
+        {
+          "title": "NICHD News and Features",
+          "content": [
+            "Science Update: Low vitamin D levels in early pregnancy linked to preterm birth riskDirector's Corner: Charting a Roadmap for the Next Five YearsMedia Advisory: Excess weight gain in first trimester associated with fetal fat accumulationAll related news"
+          ]
+        },
+        {
+          "title": "List 1",
+          "content": [
+            "Health",
+            "A to Z List",
+            "Pregnancy"
+          ]
+        },
+        {
+          "title": "List 2",
+          "content": [
+            "Facebook",
+            "Linkedin",
+            "Instagram",
+            "Copy/Paste LinkCopy Link"
+          ]
+        },
+        {
+          "title": "List 3",
+          "content": [
+            "NICHD Research Goals",
+            "​​​Activities and Advances"
+          ]
+        },
+        {
+          "title": "List 4",
+          "content": [
+            "Breastfeeding and Breast Milk",
+            "Pre-Pregnancy Care and Prenatal Care",
+            "Preterm Labor and Birth"
+          ]
+        },
+        {
+          "title": "List 5",
+          "content": [
+            "PregnancyAboutWhat are some common signs of pregnancy?How do I know if I’m pregnant?What is prenatal care and why is it important?What are some common complications of pregnancy?What is a high-risk pregnancy?What infections can affect pregnancy?What is labor?What is a cesarean delivery?What should I know about postpartum despression?NICHD Research InformationResearch GoalsActivities and AdvancesFind a StudyMore InformationOther FAQsResources",
+            "AboutWhat are some common signs of pregnancy?How do I know if I’m pregnant?What is prenatal care and why is it important?What are some common complications of pregnancy?What is a high-risk pregnancy?What infections can affect pregnancy?What is labor?What is a cesarean delivery?What should I know about postpartum despression?",
+            "What are some common signs of pregnancy?",
+            "How do I know if I’m pregnant?",
+            "What is prenatal care and why is it important?",
+            "What are some common complications of pregnancy?",
+            "What is a high-risk pregnancy?",
+            "What infections can affect pregnancy?",
+            "What is labor?",
+            "What is a cesarean delivery?",
+            "What should I know about postpartum despression?",
+            "NICHD Research InformationResearch GoalsActivities and Advances",
+            "Research Goals",
+            "Activities and Advances",
+            "Find a Study",
+            "More InformationOther FAQsResources",
+            "Other FAQs",
+            "Resources"
+          ]
+        },
+        {
+          "title": "List 6",
+          "content": [
+            "AboutWhat are some common signs of pregnancy?How do I know if I’m pregnant?What is prenatal care and why is it important?What are some common complications of pregnancy?What is a high-risk pregnancy?What infections can affect pregnancy?What is labor?What is a cesarean delivery?What should I know about postpartum despression?",
+            "What are some common signs of pregnancy?",
+            "How do I know if I’m pregnant?",
+            "What is prenatal care and why is it important?",
+            "What are some common complications of pregnancy?",
+            "What is a high-risk pregnancy?",
+            "What infections can affect pregnancy?",
+            "What is labor?",
+            "What is a cesarean delivery?",
+            "What should I know about postpartum despression?",
+            "NICHD Research InformationResearch GoalsActivities and Advances",
+            "Research Goals",
+            "Activities and Advances",
+            "Find a Study",
+            "More InformationOther FAQsResources",
+            "Other FAQs",
+            "Resources"
+          ]
+        },
+        {
+          "title": "List 7",
+          "content": [
+            "What are some common signs of pregnancy?",
+            "How do I know if I’m pregnant?",
+            "What is prenatal care and why is it important?",
+            "What are some common complications of pregnancy?",
+            "What is a high-risk pregnancy?",
+            "What infections can affect pregnancy?",
+            "What is labor?",
+            "What is a cesarean delivery?",
+            "What should I know about postpartum despression?"
+          ]
+        },
+        {
+          "title": "List 8",
+          "content": [
+            "Research Goals",
+            "Activities and Advances"
+          ]
+        },
+        {
+          "title": "List 9",
+          "content": [
+            "Other FAQs",
+            "Resources"
+          ]
+        },
+        {
+          "title": "List 10",
+          "content": [
+            "Science Update: Low vitamin D levels in early pregnancy linked to preterm birth risk",
+            "Director's Corner: Charting a Roadmap for the Next Five Years",
+            "Media Advisory: Excess weight gain in first trimester associated with fetal fat accumulation"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "WHO Maternal Health",
+      "url": "https://www.who.int/health-topics/maternal-health",
+      "extracted_at": "2025-10-05 15:43:37",
+      "sections": [
+        {
+          "title": "List 2",
+          "content": [
+            "Adolescent pregnancy",
+            "Maternal mortality",
+            "Pre-eclampsia",
+            "Zika virus"
+          ]
+        },
+        {
+          "title": "List 3",
+          "content": [
+            "WHO Statement on Caesarean Section Rates"
+          ]
+        },
+        {
+          "title": "List 4",
+          "content": [
+            "Maternal death data",
+            "Maternal, newborn, child and adolescent health data portal"
+          ]
+        },
+        {
+          "title": "List 5",
+          "content": [
+            "WHA72.2 Primary health care",
+            "WHA72.3  Community health workers delivering primary health care: opportunities and challenges"
+          ]
+        },
+        {
+          "title": "List 6",
+          "content": [
+            "Maternal Health Unit",
+            "Maternal, Newborn, Child, Adolescent health and Ageing department",
+            "Department of Sexual and Reproductive Health and Research including the UN cosponsored Special Research Programme in Human Reproduction (HRP)",
+            "Maternal and perinatal health (SRH)"
+          ]
+        }
+      ]
+    }
+  ]
+}
