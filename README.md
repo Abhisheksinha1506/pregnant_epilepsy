@@ -1,189 +1,123 @@
-# API Test Suite
+# Seizure Pregnancy Navigator
 
-A comprehensive web application for testing APIs and analyzing data sources with modern visualization capabilities.
+A comprehensive application to support pregnant women with epilepsy and their care teams. It provides seizure tracking, medication safety guidance, pregnancy milestones, knowledge resources, and clinician-ready reports.
 
 ## Features
 
-### 🚀 API Testing
-- **RESTful API Testing**: Test GET, POST, PUT, PATCH, DELETE requests
-- **Request Configuration**: Custom headers, body, timeout settings
-- **Response Analysis**: Status codes, response times, data inspection
-- **Test History**: Track and review previous test results
-- **Batch Testing**: Run multiple API tests simultaneously
+- **Medication Safety**: Browse epilepsy medication safety in pregnancy and lactation with filters and curated references.
+- **Pregnancy Tracker**: Due-date based timeline, trimester info, milestones, and epilepsy-specific guidance.
+- **Seizure Tracking**: Log seizures and view charts and trends (UI in Next.js app).
+- **Knowledge Hub**: Curated PDFs and links (RCOG, MotherToBaby, NICE, etc.), CSV export for tabular sources.
+- **Reports**: Generate summaries intended for clinical visits.
+- **Emergency Access**: Persistent emergency button and information.
 
-### 📊 Data Sources
-- **File Upload**: Support for CSV and JSON file uploads
-- **API Integration**: Connect to external APIs for real-time data
-- **Data Preview**: Preview uploaded data before processing
-- **Data Management**: Organize and manage multiple data sources
+## Monorepo Layout
 
-### 📈 Visualizations
-- **Interactive Charts**: Line, bar, pie, scatter plots
-- **Data Statistics**: Comprehensive statistical analysis
-- **Correlation Analysis**: Identify relationships between data points
-- **Export Options**: Save visualizations and reports
-
-### 🎨 Modern UI
-- **Responsive Design**: Works on desktop, tablet, and mobile
-- **Material-UI Components**: Beautiful, accessible interface
-- **Dark/Light Theme**: Customizable appearance
-- **Real-time Updates**: Live data and status updates
+```
+pregnant_epilepsy/
+├── seizure-pregnancy-navigator/   # Next.js 14 app (primary UI)
+│   ├── app/                       # App Router pages & API route handlers
+│   ├── components/                # UI components (Tailwind + lucide-react)
+│   ├── lib/                       # API services, cache, error helpers
+│   └── scripts/                   # API integration test script
+├── server/                        # Express server (sandbox/API tester backend)
+│   ├── routes/                    # Example API/testing routes
+│   └── uploads/                   # File uploads (if used)
+├── client/                        # CRA + MUI client (optional API tester UI)
+├── data/                          # Local datasets (JSON/CSV/PDFs) and ETL scripts
+└── scripts/                       # Repo-wide scripts (link checker)
+```
 
 ## Tech Stack
 
-### Backend
-- **Node.js** with Express.js
-- **TypeScript** for type safety
-- **Security**: Helmet, CORS, rate limiting
-- **Logging**: Winston for comprehensive logging
-- **File Processing**: Multer for file uploads, CSV parser
+- **Frontend (Primary)**: Next.js 14, React 18, Tailwind CSS, framer-motion, lucide-react, Recharts
+- **Backend (Next API routes)**: Route handlers under `app/api/*` with lightweight caching
+- **Optional Server**: Node/Express (helmet, rate limiting, CORS, winston logging)
+- **Optional Client**: CRA + MUI dashboard for API testing and visualization experiments
 
-### Frontend
-- **React 18** with TypeScript
-- **Material-UI (MUI)** for components
-- **Recharts** for data visualization
-- **React Router** for navigation
-- **Axios** for API communication
-
-## Getting Started
+## Quick Start
 
 ### Prerequisites
-- Node.js (v16 or higher)
-- npm or yarn
+- Node.js >= 18
+- npm >= 9
 
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd api-test-suite
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm run install-all
-   ```
-
-3. **Start the development servers**
-   ```bash
-   npm run dev
-   ```
-
-   This will start both the backend server (port 5000) and frontend development server (port 3000).
-
-### Manual Setup
-
-If you prefer to set up manually:
-
-1. **Backend Setup**
-   ```bash
-   npm install
-   npm start
-   ```
-
-2. **Frontend Setup**
-   ```bash
-   cd client
-   npm install
-   npm start
-   ```
-
-## Usage
-
-### API Testing
-1. Navigate to the "API Tester" page
-2. Configure your API request:
-   - Enter the URL
-   - Select HTTP method
-   - Add headers if needed
-   - Include request body for POST/PUT requests
-3. Click "Run Test" to execute the request
-4. Review the response data, headers, and timing information
-
-### Data Sources
-1. Go to "Data Sources" page
-2. Upload CSV or JSON files, or connect to an API
-3. Preview your data before using it for analysis
-4. Manage your data sources from the "Manage Sources" tab
-
-### Visualizations
-1. Visit the "Visualizations" page
-2. Select your data source and chart type
-3. Configure X and Y axes
-4. Generate interactive charts and analyze your data
-
-## API Endpoints
-
-### API Testing
-- `POST /api/test/test` - Test a single API endpoint
-- `POST /api/test/batch` - Run multiple API tests
-- `GET /api/test/history` - Get test history
-- `POST /api/test/save` - Save test configuration
-
-### Data Sources
-- `POST /api/data/upload/csv` - Upload CSV file
-- `POST /api/data/upload/json` - Upload JSON file
-- `POST /api/data/api` - Connect to external API
-- `GET /api/data/stats/:sourceId` - Get data source statistics
-- `POST /api/data/transform` - Transform data
-
-### Visualizations
-- `POST /api/visualize/chart` - Generate chart data
-- `POST /api/visualize/stats` - Get data statistics
-- `POST /api/visualize/correlation` - Calculate correlations
-
-## Configuration
-
-### Environment Variables
-Create a `.env` file in the root directory:
-
-```env
-NODE_ENV=development
-PORT=5000
-CLIENT_URL=http://localhost:3000
+### Install
+```bash
+# from repo root
+npm install
+cd seizure-pregnancy-navigator && npm install
+cd ../client && npm install
+cd ..
 ```
 
-### Security Features
-- **Rate Limiting**: 100 requests per 15 minutes per IP
-- **CORS Protection**: Configurable cross-origin requests
-- **Helmet Security**: Security headers and protection
-- **Input Validation**: Request validation and sanitization
-
-## Development
-
-### Project Structure
-```
-api-test-suite/
-├── server/                 # Backend Express server
-│   ├── routes/            # API route handlers
-│   ├── uploads/           # File upload storage
-│   └── logs/              # Application logs
-├── client/                # React frontend
-│   ├── src/
-│   │   ├── components/    # Reusable components
-│   │   ├── pages/         # Page components
-│   │   └── App.tsx        # Main app component
-└── package.json           # Dependencies and scripts
+### Run the Next.js App (primary)
+```bash
+cd seizure-pregnancy-navigator
+npm run dev
+# App: http://localhost:3000
 ```
 
-### Available Scripts
-- `npm start` - Start the backend server
-- `npm run dev` - Start both backend and frontend
-- `npm run client` - Start only the frontend
-- `npm run build` - Build the frontend for production
+### (Optional) Run Express server + CRA client
+```bash
+# in repo root
+npm run install-all  # installs root and client deps
+npm run dev          # starts Express (5000) and CRA client (3000)
+```
 
-## Contributing
+Notes:
+- The Next.js app is the primary product. The Express server and CRA client are optional utilities.
+- No AWS Lambda is used; Node/Express is preferred for synchronization.
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+## Environment Variables
+
+Create `seizure-pregnancy-navigator/.env.local` (see `env.example`):
+```
+OPENFDA_BASE_URL=https://api.fda.gov
+OPENFDA_API_KEY=
+NIH_BASE_URL=https://dailymed.nlm.nih.gov
+NIH_API_KEY=
+CDC_BASE_URL=https://data.cdc.gov
+CDC_API_KEY=
+WHO_BASE_URL=https://apps.who.int
+WHO_API_KEY=
+EPILEPSY_FOUNDATION_BASE_URL=https://www.epilepsy.com
+EPILEPSY_FOUNDATION_API_KEY=
+```
+These are used by `lib/api-services.ts`. The app works with local data and public endpoints even if keys are empty, but rate limits may apply.
+
+## Data Sources
+
+Local domain datasets live in `data/` and include:
+- Pregnancy categories, lactation, drug safety, epilepsy meds
+- CDC reproductive health data extracts
+- Curated PDFs (e.g., RCOG guideline, seizure diary) under `data/pdfs/`
+- ETL/Pipelines in `data/scripts/`
+
+The Knowledge page surfaces curated, verified PDFs/links. A link-checker script (`scripts/check-links.mjs`) can audit broken links.
+
+## Scripts
+
+- `seizure-pregnancy-navigator/scripts/test-api-integrations.js`: basic external API sanity tests
+- `scripts/check-links.mjs`: scan repository for external URLs and audit HTTP status
+
+## Security & Hardening
+
+- Next.js API routes and Express server use common best practices (helmet, rate limiting on Express, input size limits)
+- External requests centralized in `lib/api-services.ts` with minimal retry and error normalization
+
+## Development Tips
+
+- UI: Tailwind CSS + framer-motion for lightweight, accessible, responsive components
+- Charts: Recharts for seizure trends and summaries
+- Caching: In-memory TTL cache in `lib/cache.ts` for API responses
+
+## Run Summary
+
+- Primary app:
+  - `cd seizure-pregnancy-navigator && npm run dev` (http://localhost:3000)
+- Optional utilities:
+  - `npm run dev` at repo root starts Express (5000) + CRA client (3000)
 
 ## License
 
-This project is licensed under the MIT License.
-
-## Support
-
-For questions, issues, or contributions, please open an issue on the GitHub repository.
+MIT
