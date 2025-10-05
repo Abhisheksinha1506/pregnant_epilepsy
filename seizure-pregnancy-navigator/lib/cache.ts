@@ -38,9 +38,9 @@ export function setCacheWithCleanup(key: string, data: any, ttl = 300000) {
   
   // Clean up expired entries
   const now = Date.now()
-  for (const [k, v] of cache.entries()) {
+  cache.forEach((v, k) => {
     if (now - v.timestamp > v.ttl) {
       cache.delete(k)
     }
-  }
+  })
 }

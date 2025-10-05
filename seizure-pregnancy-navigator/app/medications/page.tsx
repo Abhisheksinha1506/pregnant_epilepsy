@@ -15,7 +15,6 @@ import {
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import MedicationCard from '@/components/MedicationCard'
-import MedicationSearch from '@/components/MedicationSearch'
 import { toast } from 'react-hot-toast'
 
 interface Medication {

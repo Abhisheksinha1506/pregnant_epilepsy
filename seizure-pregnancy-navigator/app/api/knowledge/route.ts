@@ -309,7 +309,7 @@ export async function GET() {
                       title: item.title || 'Untitled',
                       content: Array.isArray(item.content) ? item.content.join(' ') : '',
                       source: src.source || 'Unknown Source',
-                      url: Array.isArray(item.content) ? item.content.find(c => /https?:\/\//.test(c)) : undefined,
+                      url: Array.isArray(item.content) ? item.content.find((c: string) => /https?:\/\//.test(c)) : undefined,
                       raw: JSON.stringify(item, null, 2),
                       tableSample: undefined,
                       columns: undefined
@@ -422,7 +422,7 @@ export async function GET() {
               }
               return row
             }).slice(0, 10) : undefined,
-            columns: Array.isArray(item.columns) ? item.columns.filter((c: string) => c !== 'extraction_info') : (Array.isArray(item.tableSample) && item.tableSample.length > 0 && typeof item.tableSample[0] === 'object' ? Object.keys(item.tableSample[0]).filter(c => c !== 'extraction_info') : undefined)
+            columns: Array.isArray(item.columns) ? item.columns.filter((c: string) => c !== 'extraction_info') : (Array.isArray(item.tableSample) && item.tableSample.length > 0 && typeof item.tableSample[0] === 'object' ? Object.keys(item.tableSample[0]).filter((c: string) => c !== 'extraction_info') : undefined)
           })
         }
         

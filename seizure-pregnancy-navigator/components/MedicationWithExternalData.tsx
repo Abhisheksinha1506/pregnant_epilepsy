@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { ExternalDataIndicator } from './ExternalDataIndicator'
+import ExternalDataIndicator from './ExternalDataIndicator'
 import { RefreshCw, ExternalLink, AlertTriangle } from 'lucide-react'
 
 interface MedicationData {
@@ -18,6 +18,8 @@ interface ExternalData {
   data: any
   timestamp: string
   drug: string
+  error?: boolean
+  details?: string
 }
 
 interface MedicationWithExternalDataProps {
