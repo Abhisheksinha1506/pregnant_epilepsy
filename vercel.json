@@ -1,0 +1,9 @@
+{
+  "builds": [
+    { "src": "seizure-pregnancy-navigator/next.config.js", "use": "@vercel/next" }
+  ],
+  "installCommand": "cd seizure-pregnancy-navigator && npm install",
+  "buildCommand": "cd seizure-pregnancy-navigator && npm run build",
+  "framework": "nextjs"
+}
+
