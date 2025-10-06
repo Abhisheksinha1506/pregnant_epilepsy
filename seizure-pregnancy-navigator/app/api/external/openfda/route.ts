@@ -4,6 +4,7 @@ import { OpenFDAService } from '@/lib/api-services'
 const openFDAService = new OpenFDAService()
 
 export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
 
 export async function GET(request: NextRequest) {
   try {
