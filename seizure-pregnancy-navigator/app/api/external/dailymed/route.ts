@@ -3,9 +3,11 @@ import { DailyMedService } from '@/lib/api-services'
 
 const dailyMedService = new DailyMedService()
 
+export const runtime = 'nodejs'
+
 export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
+    const { searchParams } = request.nextUrl
     const ndc = searchParams.get('ndc')
     const search = searchParams.get('search')
 

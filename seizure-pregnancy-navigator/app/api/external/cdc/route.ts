@@ -3,9 +3,11 @@ import { CDCService } from '@/lib/api-services'
 
 const cdcService = new CDCService()
 
+export const runtime = 'nodejs'
+
 export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url)
+    const { searchParams } = request.nextUrl
     const type = searchParams.get('type') || 'guidelines'
 
     let data
