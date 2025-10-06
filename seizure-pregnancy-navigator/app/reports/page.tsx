@@ -186,20 +186,7 @@ export default function ReportsPage() {
             trimesterAtSeizure,
           }
         })
-        const csv = toCSV(rows, [
-          'date',
-          'time',
-          'type',
-          'durationMinutes',
-          'durationSeconds',
-          'severity',
-          'triggers',
-          'notes',
-          'medicationTaken',
-          'period',
-          'weekAtSeizure',
-          'trimesterAtSeizure',
-        ])
+        const csv = toCSV(rows)
         downloadFile(csv, 'seizure_activity.csv', 'text/csv;charset=utf-8;')
         return
       }
