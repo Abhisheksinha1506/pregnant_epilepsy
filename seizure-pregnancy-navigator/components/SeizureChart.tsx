@@ -257,11 +257,11 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                     </div>
                     <div className="text-right">
                       <div className="text-sm font-medium text-gray-900">
-                        {seizure.durationMinutes > 0 && seizure.durationSeconds > 0 
-                          ? `${seizure.durationMinutes}m ${seizure.durationSeconds}s`
-                          : seizure.durationMinutes > 0 
-                            ? `${seizure.durationMinutes}m`
-                            : `${seizure.durationSeconds}s`
+                        {(seizure.durationMinutes ?? 0) > 0 && (seizure.durationSeconds ?? 0) > 0
+                          ? `${seizure.durationMinutes ?? 0}m ${seizure.durationSeconds ?? 0}s`
+                          : (seizure.durationMinutes ?? 0) > 0
+                            ? `${seizure.durationMinutes ?? 0}m`
+                            : `${seizure.durationSeconds ?? 0}s`
                         }
                       </div>
                       <div className="text-xs text-gray-500">
