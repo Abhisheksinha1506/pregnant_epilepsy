@@ -1,0 +1,568 @@
+{
+  "source": "Medical Terms Glossary",
+  "description": "Comprehensive glossary of epilepsy and pregnancy-related medical terms",
+  "extracted_at": "2025-01-27 10:00:00",
+  "total_terms": 75,
+  "categories": [
+    "Epilepsy & Seizures",
+    "Pregnancy & Maternal Health", 
+    "Medications & Pharmacology",
+    "Medical Procedures",
+    "Healthcare Providers",
+    "General Medical Terms"
+  ],
+  "terms": [
+    {
+      "term": "AED",
+      "definition": "Anti-Epileptic Drug. Medications used to treat epilepsy and prevent seizures.",
+      "full_form": "Anti-Epileptic Drug",
+      "category": "Medications & Pharmacology",
+      "related_terms": ["ASM", "anticonvulsant", "seizure medication"],
+      "example": "Common AEDs include lamotrigine, levetiracetam, and valproic acid."
+    },
+    {
+      "term": "ASM",
+      "definition": "Anti-Seizure Medication. Another term for anti-epileptic drugs used to control seizures.",
+      "full_form": "Anti-Seizure Medication", 
+      "category": "Medications & Pharmacology",
+      "related_terms": ["AED", "anticonvulsant", "seizure medication"],
+      "example": "ASMs are carefully monitored during pregnancy for safety."
+    },
+    {
+      "term": "Absence Seizure",
+      "definition": "A type of generalized seizure characterized by brief episodes of staring and unresponsiveness.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["generalized seizure", "petit mal", "staring spell"],
+      "example": "Absence seizures typically last 5-15 seconds and may occur multiple times per day."
+    },
+    {
+      "term": "Atonic Seizure",
+      "definition": "A type of seizure that causes sudden loss of muscle tone, often resulting in falls.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures", 
+      "related_terms": ["drop attack", "generalized seizure", "muscle tone"],
+      "example": "Atonic seizures can be dangerous during pregnancy due to fall risk."
+    },
+    {
+      "term": "Aura",
+      "definition": "A warning sensation that occurs before a seizure, such as unusual smells, tastes, or feelings.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["prodrome", "seizure warning", "focal seizure"],
+      "example": "Some women report changes in their auras during pregnancy."
+    },
+    {
+      "term": "Birth Defect",
+      "definition": "A physical or developmental abnormality present at birth, which may be caused by genetic factors, medications, or other exposures during pregnancy.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["congenital malformation", "teratogenicity", "neural tube defect"],
+      "example": "Some AEDs increase the risk of birth defects, particularly neural tube defects."
+    },
+    {
+      "term": "Blood Level Monitoring",
+      "definition": "Regular testing of medication levels in the blood to ensure therapeutic effectiveness and safety.",
+      "full_form": null,
+      "category": "Medical Procedures",
+      "related_terms": ["therapeutic drug monitoring", "TDM", "serum levels"],
+      "example": "Blood level monitoring is especially important during pregnancy as medication levels can change."
+    },
+    {
+      "term": "Carbamazepine",
+      "definition": "An anti-epileptic drug (brand name Tegretol) used to treat various types of seizures.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["Tegretol", "AED", "ASM"],
+      "example": "Carbamazepine requires careful monitoring during pregnancy due to potential risks."
+    },
+    {
+      "term": "Congenital Malformation",
+      "definition": "A birth defect or structural abnormality present at birth, which may be caused by genetic factors or environmental exposures during pregnancy.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["birth defect", "teratogenicity", "neural tube defect"],
+      "example": "Some AEDs are associated with an increased risk of congenital malformations."
+    },
+    {
+      "term": "EEG",
+      "definition": "Electroencephalogram. A test that measures electrical activity in the brain to help diagnose epilepsy.",
+      "full_form": "Electroencephalogram",
+      "category": "Medical Procedures",
+      "related_terms": ["brain waves", "seizure diagnosis", "neurological test"],
+      "example": "An EEG may be performed during pregnancy to monitor seizure activity."
+    },
+    {
+      "term": "Epilepsy",
+      "definition": "A neurological disorder characterized by recurrent, unprovoked seizures due to abnormal electrical activity in the brain.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure disorder", "neurological condition", "brain disorder"],
+      "example": "Epilepsy affects approximately 1% of the population and can impact pregnancy."
+    },
+    {
+      "term": "Fetal Monitoring",
+      "definition": "Medical procedures used to monitor the health and development of the fetus during pregnancy.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["prenatal care", "ultrasound", "non-stress test"],
+      "example": "Fetal monitoring is especially important for women with epilepsy during pregnancy."
+    },
+    {
+      "term": "Focal Seizure",
+      "definition": "A seizure that begins in one specific area of the brain, previously called partial seizures.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["partial seizure", "localized seizure", "focal aware seizure"],
+      "example": "Focal seizures may or may not cause loss of consciousness."
+    },
+    {
+      "term": "Folic Acid",
+      "definition": "A B-vitamin that is crucial for preventing neural tube defects in developing fetuses.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["folate", "neural tube defect prevention", "prenatal vitamin"],
+      "example": "Women with epilepsy are often prescribed higher doses of folic acid (5mg daily) before and during pregnancy."
+    },
+    {
+      "term": "Generalized Seizure",
+      "definition": "A seizure that affects both sides of the brain from the beginning, including tonic-clonic, absence, and atonic seizures.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["bilateral seizure", "tonic-clonic", "grand mal"],
+      "example": "Generalized seizures can be more dangerous during pregnancy due to fall risk."
+    },
+    {
+      "term": "Gestational Diabetes",
+      "definition": "A form of diabetes that develops during pregnancy and usually resolves after delivery.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["pregnancy diabetes", "glucose intolerance", "maternal diabetes"],
+      "example": "Women with epilepsy may have a slightly higher risk of gestational diabetes."
+    },
+    {
+      "term": "Lamotrigine",
+      "definition": "An anti-epileptic drug (brand name Lamictal) that is generally considered safer during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["Lamictal", "AED", "pregnancy-safe medication"],
+      "example": "Lamotrigine is often preferred for women with epilepsy who are planning pregnancy."
+    },
+    {
+      "term": "Levetiracetam",
+      "definition": "An anti-epileptic drug (brand name Keppra) that is generally considered safer during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["Keppra", "AED", "pregnancy-safe medication"],
+      "example": "Levetiracetam has a lower risk of birth defects compared to older AEDs."
+    },
+    {
+      "term": "MFM",
+      "definition": "Maternal-Fetal Medicine. A medical specialty that focuses on high-risk pregnancies and complex maternal and fetal conditions.",
+      "full_form": "Maternal-Fetal Medicine",
+      "category": "Healthcare Providers",
+      "related_terms": ["perinatologist", "high-risk pregnancy", "fetal medicine"],
+      "example": "Women with epilepsy may be referred to an MFM specialist during pregnancy."
+    },
+    {
+      "term": "Myoclonic Seizure",
+      "definition": "A type of seizure characterized by brief, shock-like muscle jerks or twitches.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["muscle jerks", "myoclonus", "generalized seizure"],
+      "example": "Myoclonic seizures can occur in various epilepsy syndromes."
+    },
+    {
+      "term": "Neural Tube Defect",
+      "definition": "A birth defect affecting the brain, spine, or spinal cord, such as spina bifida or anencephaly.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["spina bifida", "anencephaly", "birth defect"],
+      "example": "Some AEDs increase the risk of neural tube defects, which folic acid helps prevent."
+    },
+    {
+      "term": "Neurologist",
+      "definition": "A medical doctor who specializes in disorders of the nervous system, including epilepsy.",
+      "full_form": null,
+      "category": "Healthcare Providers",
+      "related_terms": ["brain specialist", "seizure doctor", "neurological care"],
+      "example": "A neurologist should be involved in the care of pregnant women with epilepsy."
+    },
+    {
+      "term": "OB-GYN",
+      "definition": "Obstetrician-Gynecologist. A medical doctor who specializes in women's reproductive health and pregnancy care.",
+      "full_form": "Obstetrician-Gynecologist",
+      "category": "Healthcare Providers",
+      "related_terms": ["obstetrician", "gynecologist", "women's health"],
+      "example": "Regular visits with an OB-GYN are essential for pregnant women with epilepsy."
+    },
+    {
+      "term": "Phenytoin",
+      "definition": "An anti-epileptic drug (brand name Dilantin) that requires careful monitoring during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["Dilantin", "AED", "fetal hydantoin syndrome"],
+      "example": "Phenytoin can cause fetal hydantoin syndrome and requires vitamin K supplementation."
+    },
+    {
+      "term": "Polytherapy",
+      "definition": "The use of multiple anti-epileptic drugs simultaneously to control seizures.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["combination therapy", "multiple AEDs", "drug interactions"],
+      "example": "Polytherapy during pregnancy increases the complexity of medication management."
+    },
+    {
+      "term": "Postpartum",
+      "definition": "The period following childbirth, typically the first 6-12 weeks after delivery.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["after birth", "post-delivery", "recovery period"],
+      "example": "Postpartum care for women with epilepsy includes monitoring for seizure changes."
+    },
+    {
+      "term": "Preeclampsia",
+      "definition": "A pregnancy complication characterized by high blood pressure and protein in the urine.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["pregnancy-induced hypertension", "toxemia", "high blood pressure"],
+      "example": "Women with epilepsy may have a slightly higher risk of preeclampsia."
+    },
+    {
+      "term": "Pregnancy Category",
+      "definition": "FDA classification system (A, B, C, D, X) that indicates the potential risk of medications to a developing fetus.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["FDA categories", "pregnancy risk", "teratogenicity"],
+      "example": "Most AEDs are Category C or D, indicating some risk to the fetus."
+    },
+    {
+      "term": "Prodrome",
+      "definition": "Early warning signs or symptoms that occur hours or days before a seizure.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure warning", "aura", "pre-seizure symptoms"],
+      "example": "Recognizing prodrome symptoms can help women prepare for potential seizures."
+    },
+    {
+      "term": "Seizure Action Plan",
+      "definition": "A written plan that outlines what to do when someone has a seizure, including emergency contacts and medications.",
+      "full_form": null,
+      "category": "General Medical Terms",
+      "related_terms": ["emergency plan", "seizure protocol", "safety plan"],
+      "example": "A seizure action plan is especially important for pregnant women with epilepsy."
+    },
+    {
+      "term": "Status Epilepticus",
+      "definition": "A medical emergency in which seizures last longer than 5 minutes or occur in rapid succession without recovery.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure emergency", "prolonged seizure", "medical emergency"],
+      "example": "Status epilepticus during pregnancy requires immediate medical attention."
+    },
+    {
+      "term": "Teratogenicity",
+      "definition": "The ability of a substance to cause birth defects or developmental abnormalities in a developing fetus.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["birth defects", "developmental toxicity", "fetal risk"],
+      "example": "The teratogenicity of AEDs varies significantly between different medications."
+    },
+    {
+      "term": "Tonic-Clonic Seizure",
+      "definition": "A type of generalized seizure characterized by muscle stiffening (tonic phase) followed by jerking movements (clonic phase).",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["grand mal seizure", "convulsion", "generalized seizure"],
+      "example": "Tonic-clonic seizures can be dangerous during pregnancy due to fall risk and oxygen deprivation."
+    },
+    {
+      "term": "Tonic Seizure",
+      "definition": "A type of seizure characterized by sustained muscle stiffening or rigidity.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["muscle stiffening", "rigidity", "generalized seizure"],
+      "example": "Tonic seizures can cause falls and are particularly concerning during pregnancy."
+    },
+    {
+      "term": "Trimester",
+      "definition": "One of three 3-month periods of pregnancy: first trimester (weeks 1-12), second trimester (weeks 13-26), and third trimester (weeks 27-40).",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["pregnancy stages", "gestational periods", "pregnancy phases"],
+      "example": "Medication needs may change during different trimesters of pregnancy."
+    },
+    {
+      "term": "Valproic Acid",
+      "definition": "An anti-epileptic drug (brand names Depakote, Depakene) that has the highest risk of birth defects and should be avoided during pregnancy when possible.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["Depakote", "Depakene", "high-risk AED"],
+      "example": "Valproic acid is associated with a 10-11% risk of major birth defects and should be avoided during pregnancy."
+    },
+    {
+      "term": "Vitamin K",
+      "definition": "A vitamin essential for blood clotting that may need to be supplemented in newborns whose mothers took certain AEDs during pregnancy.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["blood clotting", "newborn supplementation", "AED effects"],
+      "example": "Babies born to mothers taking certain AEDs may need vitamin K supplementation at birth."
+    },
+    {
+      "term": "Anencephaly",
+      "definition": "A severe neural tube defect in which the baby is born without parts of the brain and skull.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["neural tube defect", "birth defect", "brain malformation"],
+      "example": "Anencephaly is a severe birth defect that can be prevented with adequate folic acid intake."
+    },
+    {
+      "term": "Anticonvulsant",
+      "definition": "Another term for anti-epileptic drugs or anti-seizure medications.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["AED", "ASM", "seizure medication"],
+      "example": "Anticonvulsant medications are used to prevent and control seizures."
+    },
+    {
+      "term": "Atonic",
+      "definition": "Lacking muscle tone or strength, often referring to atonic seizures that cause sudden loss of muscle control.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["muscle tone", "drop attack", "loss of strength"],
+      "example": "Atonic seizures cause sudden loss of muscle tone, leading to falls."
+    },
+    {
+      "term": "Bilateral",
+      "definition": "Affecting both sides, often referring to seizures that involve both sides of the brain.",
+      "full_form": null,
+      "category": "General Medical Terms",
+      "related_terms": ["both sides", "generalized", "symmetrical"],
+      "example": "Generalized seizures are bilateral, affecting both sides of the brain."
+    },
+    {
+      "term": "Clonic",
+      "definition": "Referring to the jerking or rhythmic movement phase of a seizure.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["jerking", "rhythmic", "convulsive"],
+      "example": "The clonic phase of a tonic-clonic seizure involves rhythmic jerking movements."
+    },
+    {
+      "term": "Convulsion",
+      "definition": "A general term for violent, involuntary muscle contractions, often used interchangeably with seizure.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure", "muscle contractions", "involuntary movement"],
+      "example": "Convulsions during pregnancy require immediate medical attention."
+    },
+    {
+      "term": "Dilantin",
+      "definition": "Brand name for phenytoin, an anti-epileptic drug that requires careful monitoring during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["phenytoin", "AED", "fetal hydantoin syndrome"],
+      "example": "Dilantin can cause fetal hydantoin syndrome and requires vitamin K supplementation."
+    },
+    {
+      "term": "Drop Attack",
+      "definition": "A sudden fall caused by loss of muscle tone, often due to atonic seizures.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["atonic seizure", "sudden fall", "muscle tone loss"],
+      "example": "Drop attacks are particularly dangerous during pregnancy due to fall risk."
+    },
+    {
+      "term": "Epileptologist",
+      "definition": "A neurologist who specializes specifically in epilepsy and seizure disorders.",
+      "full_form": null,
+      "category": "Healthcare Providers",
+      "related_terms": ["epilepsy specialist", "seizure doctor", "neurologist"],
+      "example": "An epileptologist has specialized training in managing epilepsy during pregnancy."
+    },
+    {
+      "term": "Fetal Hydantoin Syndrome",
+      "definition": "A pattern of birth defects associated with exposure to phenytoin during pregnancy.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["phenytoin", "birth defects", "fetal exposure"],
+      "example": "Fetal hydantoin syndrome can cause facial abnormalities and developmental delays."
+    },
+    {
+      "term": "Folate",
+      "definition": "The natural form of folic acid found in foods, essential for preventing neural tube defects.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["folic acid", "B-vitamin", "neural tube prevention"],
+      "example": "Adequate folate intake is crucial for women with epilepsy planning pregnancy."
+    },
+    {
+      "term": "Grand Mal",
+      "definition": "An older term for tonic-clonic seizures, now less commonly used.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["tonic-clonic", "convulsion", "generalized seizure"],
+      "example": "Grand mal seizures are now called tonic-clonic seizures."
+    },
+    {
+      "term": "Keppra",
+      "definition": "Brand name for levetiracetam, an anti-epileptic drug generally considered safer during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["levetiracetam", "AED", "pregnancy-safe"],
+      "example": "Keppra is often preferred for women with epilepsy who are pregnant or planning pregnancy."
+    },
+    {
+      "term": "Lamictal",
+      "definition": "Brand name for lamotrigine, an anti-epileptic drug generally considered safer during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["lamotrigine", "AED", "pregnancy-safe"],
+      "example": "Lamictal is often the preferred AED for women planning pregnancy."
+    },
+    {
+      "term": "Monotherapy",
+      "definition": "Treatment with a single anti-epileptic drug, as opposed to polytherapy with multiple drugs.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["single drug", "one medication", "simplified treatment"],
+      "example": "Monotherapy is generally preferred during pregnancy to minimize risks."
+    },
+    {
+      "term": "Myoclonus",
+      "definition": "Brief, shock-like muscle jerks or twitches, which can occur as seizures or as a normal phenomenon.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["muscle jerks", "twitches", "myoclonic seizure"],
+      "example": "Myoclonus can be a normal sleep phenomenon or a sign of epilepsy."
+    },
+    {
+      "term": "Neonatal",
+      "definition": "Relating to the first 28 days of a baby's life after birth.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["newborn", "infant", "post-birth"],
+      "example": "Neonatal care for babies of mothers with epilepsy may include monitoring for withdrawal symptoms."
+    },
+    {
+      "term": "Neurodevelopmental",
+      "definition": "Relating to the development of the nervous system and brain function.",
+      "full_form": null,
+      "category": "General Medical Terms",
+      "related_terms": ["brain development", "cognitive development", "neurological development"],
+      "example": "Some AEDs may affect neurodevelopmental outcomes in children."
+    },
+    {
+      "term": "Perinatologist",
+      "definition": "Another term for a Maternal-Fetal Medicine (MFM) specialist who manages high-risk pregnancies.",
+      "full_form": null,
+      "category": "Healthcare Providers",
+      "related_terms": ["MFM", "high-risk pregnancy", "fetal medicine"],
+      "example": "A perinatologist may be consulted for complex pregnancies involving epilepsy."
+    },
+    {
+      "term": "Petit Mal",
+      "definition": "An older term for absence seizures, now less commonly used.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["absence seizure", "staring spell", "brief seizure"],
+      "example": "Petit mal seizures are now called absence seizures."
+    },
+    {
+      "term": "Pregnancy Registry",
+      "definition": "A research database that collects information about medication use during pregnancy and outcomes.",
+      "full_form": null,
+      "category": "General Medical Terms",
+      "related_terms": ["research database", "pregnancy outcomes", "medication safety"],
+      "example": "The North American AED Pregnancy Registry tracks outcomes for women taking AEDs during pregnancy."
+    },
+    {
+      "term": "Prodrome",
+      "definition": "Early warning signs or symptoms that occur hours or days before a seizure.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure warning", "aura", "pre-seizure symptoms"],
+      "example": "Recognizing prodrome symptoms can help women prepare for potential seizures."
+    },
+    {
+      "term": "Refractory",
+      "definition": "Resistant to treatment, often referring to epilepsy that doesn't respond well to medications.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["treatment-resistant", "difficult to control", "medication-resistant"],
+      "example": "Refractory epilepsy may require more aggressive treatment during pregnancy."
+    },
+    {
+      "term": "Seizure Threshold",
+      "definition": "The level of brain activity at which a seizure is likely to occur, which can be lowered by various factors.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["seizure susceptibility", "brain excitability", "seizure risk"],
+      "example": "Pregnancy can affect the seizure threshold, making seizures more or less likely."
+    },
+    {
+      "term": "Spina Bifida",
+      "definition": "A neural tube defect in which the spinal column doesn't close properly during development.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["neural tube defect", "birth defect", "spinal malformation"],
+      "example": "Adequate folic acid intake helps prevent spina bifida and other neural tube defects."
+    },
+    {
+      "term": "Tegretol",
+      "definition": "Brand name for carbamazepine, an anti-epileptic drug that requires careful monitoring during pregnancy.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["carbamazepine", "AED", "neural tube risk"],
+      "example": "Tegretol increases the risk of neural tube defects and requires folic acid supplementation."
+    },
+    {
+      "term": "Therapeutic Drug Monitoring",
+      "definition": "Regular testing of medication levels in the blood to ensure optimal dosing and safety.",
+      "full_form": null,
+      "category": "Medical Procedures",
+      "related_terms": ["TDM", "blood level monitoring", "serum levels"],
+      "example": "Therapeutic drug monitoring is especially important during pregnancy as medication needs change."
+    },
+    {
+      "term": "Tonic",
+      "definition": "Referring to the muscle stiffening phase of a seizure.",
+      "full_form": null,
+      "category": "Epilepsy & Seizures",
+      "related_terms": ["stiffening", "rigidity", "muscle tension"],
+      "example": "The tonic phase of a seizure involves sustained muscle stiffening."
+    },
+    {
+      "term": "Toxemia",
+      "definition": "An older term for preeclampsia, a pregnancy complication involving high blood pressure.",
+      "full_form": null,
+      "category": "Pregnancy & Maternal Health",
+      "related_terms": ["preeclampsia", "pregnancy-induced hypertension", "high blood pressure"],
+      "example": "Toxemia (preeclampsia) can be dangerous for both mother and baby."
+    },
+    {
+      "term": "Toxicity",
+      "definition": "The degree to which a substance can cause harm, often referring to medication side effects or overdose.",
+      "full_form": null,
+      "category": "General Medical Terms",
+      "related_terms": ["harmful effects", "side effects", "overdose"],
+      "example": "Medication toxicity can be monitored through blood level testing."
+    },
+    {
+      "term": "Ultrasound",
+      "definition": "A medical imaging technique that uses sound waves to create images of the fetus during pregnancy.",
+      "full_form": null,
+      "category": "Medical Procedures",
+      "related_terms": ["fetal imaging", "prenatal imaging", "sonogram"],
+      "example": "Regular ultrasounds help monitor fetal development in women with epilepsy."
+    },
+    {
+      "term": "Withdrawal",
+      "definition": "Symptoms that occur when stopping a medication, which can include seizures in the case of AEDs.",
+      "full_form": null,
+      "category": "Medications & Pharmacology",
+      "related_terms": ["discontinuation", "stopping medication", "rebound seizures"],
+      "example": "Sudden withdrawal from AEDs can cause dangerous rebound seizures."
+    }
+  ]
+}
