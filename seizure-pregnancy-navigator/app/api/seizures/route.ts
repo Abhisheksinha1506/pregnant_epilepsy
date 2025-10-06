@@ -1,5 +1,8 @@
 import { NextResponse } from 'next/server'
 
+export const runtime = 'nodejs'
+export const maxDuration = 30
+
 export async function GET() {
   try {
     // This would typically load from a database
@@ -16,7 +19,25 @@ export async function GET() {
 
 export async function POST(request: Request) {
   try {
+    // Check content type
+    const contentType = request.headers.get('content-type')
+    if (!contentType || !contentType.includes('application/json')) {
+      return NextResponse.json(
+        { error: 'Content-Type must be application/json' },
+        { status: 400 }
+      )
+    }
+    
     const body = await request.json()
+    
+    // Check payload size (limit to 1MB)
+    const bodySize = JSON.stringify(body).length
+    if (bodySize > 1024 * 1024) {
+      return NextResponse.json(
+        { error: 'Payload too large. Maximum size is 1MB' },
+        { status: 413 }
+      )
+    }
     
     // Validate the seizure data
     const requiredFields = ['date', 'time', 'type', 'duration', 'severity']

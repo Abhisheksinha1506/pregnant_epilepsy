@@ -2,8 +2,16 @@ import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
 
+export const runtime = 'nodejs'
+export const maxDuration = 30
+
 export async function GET() {
   try {
+    console.log('💊 MEDICATIONS API - Environment Check:')
+    console.log(`   NODE_ENV: ${process.env.NODE_ENV}`)
+    console.log(`   VERCEL_REGION: ${process.env.VERCEL_REGION}`)
+    console.log(`   Data directory access: ${process.cwd()}`)
+    
     // Try to load from comprehensive database first
     const comprehensivePath = path.join(process.cwd(), '..', 'data', 'comprehensive_epilepsy_medications.json')
     

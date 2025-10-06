@@ -5,9 +5,17 @@ const cdcService = new CDCService()
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+export const maxDuration = 30
 
 export async function GET(request: NextRequest) {
   try {
+    // Log environment status
+    console.log('🔍 CDC API - Environment Check:')
+    console.log(`   CDC_API_KEY: ${process.env.CDC_API_KEY ? 'SET' : 'NOT SET'}`)
+    console.log(`   CDC_BASE_URL: ${process.env.CDC_BASE_URL || 'NOT SET'}`)
+    console.log(`   NODE_ENV: ${process.env.NODE_ENV}`)
+    console.log(`   VERCEL_REGION: ${process.env.VERCEL_REGION}`)
+
     const { searchParams } = request.nextUrl
     const type = searchParams.get('type') || 'guidelines'
 

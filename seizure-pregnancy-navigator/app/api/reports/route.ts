@@ -30,6 +30,9 @@ function countCsvRows(csv: string): number {
   return lines.length - 1
 }
 
+export const runtime = 'nodejs'
+export const maxDuration = 30
+
 export async function GET() {
   try {
     const dataDir = path.join(process.cwd(), '..', 'data')

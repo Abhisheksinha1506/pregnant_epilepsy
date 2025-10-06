@@ -272,6 +272,9 @@ function categorizeFile(filename: string, content: string): { type: KnowledgeIte
   return { type: 'article', category: 'General Information', tags: ['general', 'information'] }
 }
 
+export const runtime = 'nodejs'
+export const maxDuration = 30
+
 export async function GET() {
   try {
     const dataDir = path.join(process.cwd(), '..', 'data')

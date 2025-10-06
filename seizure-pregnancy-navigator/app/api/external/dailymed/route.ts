@@ -5,9 +5,17 @@ const dailyMedService = new DailyMedService()
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'
+export const maxDuration = 30
 
 export async function GET(request: NextRequest) {
   try {
+    // Log environment status
+    console.log('🔍 DailyMed API - Environment Check:')
+    console.log(`   NIH_API_KEY: ${process.env.NIH_API_KEY ? 'SET' : 'NOT SET'}`)
+    console.log(`   NIH_BASE_URL: ${process.env.NIH_BASE_URL || 'NOT SET'}`)
+    console.log(`   NODE_ENV: ${process.env.NODE_ENV}`)
+    console.log(`   VERCEL_REGION: ${process.env.VERCEL_REGION}`)
+
     const { searchParams } = request.nextUrl
     const ndc = searchParams.get('ndc')
     const search = searchParams.get('search')

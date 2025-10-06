@@ -2,6 +2,9 @@ import { NextResponse } from 'next/server'
 import fs from 'fs'
 import path from 'path'
 
+export const runtime = 'nodejs'
+export const maxDuration = 30
+
 export async function GET() {
   try {
     // Load pregnancy data from our collected data files

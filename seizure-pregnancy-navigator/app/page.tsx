@@ -19,6 +19,7 @@ import Hero from '@/components/Hero'
 import FeatureCard from '@/components/FeatureCard'
 import Disclaimer from '@/components/Disclaimer'
 import EmergencyButton from '@/components/EmergencyButton'
+import EnvironmentStatus from '@/components/EnvironmentStatus'
 
 export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
@@ -182,6 +183,16 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* Environment Status - Only show in development */}
+        {process.env.NODE_ENV === 'development' && (
+          <section className="py-16 px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Environment Status</h2>
+              <EnvironmentStatus />
+            </div>
+          </section>
+        )}
 
         {/* Disclaimer */}
         <Disclaimer />
