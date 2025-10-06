@@ -1,9 +1,16 @@
 {
   "version": 2,
-  "buildCommand": "cd seizure-pregnancy-navigator && npm run build",
-  "installCommand": "cd seizure-pregnancy-navigator && npm install",
-  "outputDirectory": "seizure-pregnancy-navigator/.next",
-  "framework": "nextjs",
-  "rootDirectory": "seizure-pregnancy-navigator"
+  "builds": [
+    {
+      "src": "seizure-pregnancy-navigator/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "seizure-pregnancy-navigator/$1"
+    }
+  ]
 }
 
