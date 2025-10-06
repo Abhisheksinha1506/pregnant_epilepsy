@@ -340,7 +340,7 @@ export default function EmergencyPage() {
             </div>
             <div className="text-center">
               <div className="text-4xl font-bold text-red-900 mb-2">CALL {info.emergencyServicesNumber}</div>
-              <p className="text-red-800 text-lg">If you're experiencing a medical emergency, call immediately.</p>
+              <p className="text-red-800 text-lg">If you&apos;re experiencing a medical emergency, call immediately.</p>
             </div>
           </div>
 

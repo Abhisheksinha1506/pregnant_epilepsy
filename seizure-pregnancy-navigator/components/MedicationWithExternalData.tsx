@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import ExternalDataIndicator from './ExternalDataIndicator'
 import { RefreshCw, ExternalLink, AlertTriangle } from 'lucide-react'
 
@@ -32,7 +32,7 @@ export default function MedicationWithExternalData({ drugName }: MedicationWithE
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
 
-  const fetchMedicationData = async (includeExternal = true) => {
+  const fetchMedicationData = useCallback(async (includeExternal = true) => {
     try {
       setLoading(true)
       setError(null)
@@ -59,11 +59,11 @@ export default function MedicationWithExternalData({ drugName }: MedicationWithE
     } finally {
       setLoading(false)
     }
-  }
+  }, [drugName])
 
   useEffect(() => {
     fetchMedicationData()
-  }, [drugName])
+  }, [drugName, fetchMedicationData])
 
   const handleRefresh = () => {
     fetchMedicationData(true)

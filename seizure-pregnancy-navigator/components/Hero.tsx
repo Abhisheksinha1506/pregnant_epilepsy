@@ -82,7 +82,7 @@ export default function Hero() {
               <span className="font-semibold">Emergency Information</span>
             </div>
             <p className="text-red-700 text-sm">
-              If you're experiencing a medical emergency, call 911 immediately. 
+              If you&apos;re experiencing a medical emergency, call 911 immediately. 
               This app is for informational purposes only and does not replace professional medical advice.
             </p>
           </div>

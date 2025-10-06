@@ -13,7 +13,7 @@ export async function GET() {
     console.log(`   Data directory access: ${process.cwd()}`)
     
     // Try to load from comprehensive database first
-    const comprehensivePath = path.join(process.cwd(), '..', 'data', 'comprehensive_epilepsy_medications.json')
+    const comprehensivePath = path.join(process.cwd(), 'data', 'comprehensive_epilepsy_medications.json')
     
     if (fs.existsSync(comprehensivePath)) {
       const data = JSON.parse(fs.readFileSync(comprehensivePath, 'utf8'))
@@ -21,7 +21,7 @@ export async function GET() {
     }
     
     // Fallback to original database
-    const dataPath = path.join(process.cwd(), '..', 'data', 'epilepsy_medication_safety_database.json')
+    const dataPath = path.join(process.cwd(), 'data', 'epilepsy_medication_safety_database.json')
     
     if (fs.existsSync(dataPath)) {
       const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))

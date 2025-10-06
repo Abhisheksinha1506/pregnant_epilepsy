@@ -60,7 +60,10 @@ export async function GET() {
         key === 'NODE_ENV'
       )
       .reduce((acc, key) => {
-        acc[key] = process.env[key]
+        const value = process.env[key]
+        if (value !== undefined) {
+          acc[key] = value
+        }
         return acc
       }, {} as Record<string, string>)
 

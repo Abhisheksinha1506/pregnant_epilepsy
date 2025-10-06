@@ -8,7 +8,7 @@ export const maxDuration = 30
 export async function GET() {
   try {
     // Load pregnancy data from our collected data files
-    const dataPath = path.join(process.cwd(), '..', 'data', 'comprehensive_pregnancy_data.json')
+    const dataPath = path.join(process.cwd(), 'data', 'comprehensive_pregnancy_data.json')
     
     if (fs.existsSync(dataPath)) {
       const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'))

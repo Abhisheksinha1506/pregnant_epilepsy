@@ -16,7 +16,11 @@ import {
   Shield,
   AlertTriangle,
   CheckCircle,
-  Info
+  Info,
+  ChevronDown,
+  ChevronUp,
+  Tag,
+  SortAsc
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 
@@ -36,6 +40,15 @@ interface KnowledgeItem {
   columns?: string[]
 }
 
+interface GlossaryTerm {
+  term: string
+  definition: string
+  full_form?: string
+  category: string
+  related_terms: string[]
+  example: string
+}
+
 export default function KnowledgePage() {
   const [knowledgeItems, setKnowledgeItems] = useState<KnowledgeItem[]>([])
   const [filteredItems, setFilteredItems] = useState<KnowledgeItem[]>([])
@@ -45,6 +58,15 @@ export default function KnowledgePage() {
   // Removed raw view toggle per UX request
   const [expandedId] = useState<string | null>(null)
   const [rowsOpen, setRowsOpen] = useState<Record<string, boolean>>({})
+  
+  // Glossary state
+  const [activeTab, setActiveTab] = useState<'knowledge' | 'glossary'>('knowledge')
+  const [glossaryTerms, setGlossaryTerms] = useState<GlossaryTerm[]>([])
+  const [filteredTerms, setFilteredTerms] = useState<GlossaryTerm[]>([])
+  const [glossarySearchTerm, setGlossarySearchTerm] = useState('')
+  const [selectedCategory, setSelectedCategory] = useState('all')
+  const [selectedLetter, setSelectedLetter] = useState('all')
+  const [expandedTerm, setExpandedTerm] = useState<string | null>(null)
 
   useEffect(() => {
     const fetchKnowledge = async () => {
@@ -69,6 +91,7 @@ export default function KnowledgePage() {
       }
     }
     fetchKnowledge()
+    loadGlossaryData()
   }, [])
 
   const loadKnowledgeData = () => {
@@ -175,6 +198,68 @@ export default function KnowledgePage() {
     setFilteredItems(knowledgeData)
   }
 
+  const loadGlossaryData = async () => {
+    try {
+      // Try to load from the comprehensive database first
+      const response = await fetch('/api/glossary')
+      if (response.ok) {
+        const data = await response.json()
+        if (data.terms && Array.isArray(data.terms)) {
+          setGlossaryTerms(data.terms)
+          setFilteredTerms(data.terms)
+          return
+        }
+      }
+    } catch (error) {
+      console.error('Error loading glossary from API:', error)
+    }
+    
+    // Fallback to static data if API fails
+    const fallbackData: GlossaryTerm[] = [
+      {
+        term: "AED",
+        definition: "Anti-Epileptic Drug. Medications used to treat epilepsy and prevent seizures.",
+        full_form: "Anti-Epileptic Drug",
+        category: "Medications & Pharmacology",
+        related_terms: ["ASM", "anticonvulsant", "seizure medication"],
+        example: "Common AEDs include lamotrigine, levetiracetam, and valproic acid."
+      },
+      {
+        term: "ASM",
+        definition: "Anti-Seizure Medication. Another term for anti-epileptic drugs used to control seizures.",
+        full_form: "Anti-Seizure Medication",
+        category: "Medications & Pharmacology",
+        related_terms: ["AED", "anticonvulsant", "seizure medication"],
+        example: "ASMs are carefully monitored during pregnancy for safety."
+      },
+      {
+        term: "Teratogenicity",
+        definition: "The ability of a substance to cause birth defects or developmental abnormalities in a developing fetus.",
+        category: "Medications & Pharmacology",
+        related_terms: ["birth defects", "developmental toxicity", "fetal risk"],
+        example: "The teratogenicity of AEDs varies significantly between different medications."
+      },
+      {
+        term: "MFM",
+        definition: "Maternal-Fetal Medicine. A medical specialty that focuses on high-risk pregnancies and complex maternal and fetal conditions.",
+        full_form: "Maternal-Fetal Medicine",
+        category: "Healthcare Providers",
+        related_terms: ["perinatologist", "high-risk pregnancy", "fetal medicine"],
+        example: "Women with epilepsy may be referred to an MFM specialist during pregnancy."
+      },
+      {
+        term: "Polytherapy",
+        definition: "The use of multiple anti-epileptic drugs simultaneously to control seizures.",
+        category: "Medications & Pharmacology",
+        related_terms: ["combination therapy", "multiple AEDs", "drug interactions"],
+        example: "Polytherapy during pregnancy increases the complexity of medication management."
+      }
+    ]
+    
+    setGlossaryTerms(fallbackData)
+    setFilteredTerms(fallbackData)
+  }
+
   const handleSearch = (term: string) => {
     setSearchTerm(term)
     const filtered = knowledgeItems.filter(item => 
@@ -202,6 +287,65 @@ export default function KnowledgePage() {
     }
 
     setFilteredItems(filtered)
+  }
+
+  // Glossary functions
+  const handleGlossarySearch = (term: string) => {
+    setGlossarySearchTerm(term)
+    filterGlossaryTerms(term, selectedCategory, selectedLetter)
+  }
+
+  const handleCategoryFilter = (category: string) => {
+    setSelectedCategory(category)
+    filterGlossaryTerms(glossarySearchTerm, category, selectedLetter)
+  }
+
+  const handleLetterFilter = (letter: string) => {
+    setSelectedLetter(letter)
+    filterGlossaryTerms(glossarySearchTerm, selectedCategory, letter)
+  }
+
+  const filterGlossaryTerms = (search: string, category: string, letter: string) => {
+    let filtered = glossaryTerms
+
+    // Search filter
+    if (search) {
+      filtered = filtered.filter(term => 
+        term.term.toLowerCase().includes(search.toLowerCase()) ||
+        term.definition.toLowerCase().includes(search.toLowerCase()) ||
+        term.related_terms.some(related => 
+          related.toLowerCase().includes(search.toLowerCase())
+        )
+      )
+    }
+
+    // Category filter
+    if (category !== 'all') {
+      filtered = filtered.filter(term => term.category === category)
+    }
+
+    // Letter filter
+    if (letter !== 'all') {
+      filtered = filtered.filter(term => 
+        term.term.toLowerCase().startsWith(letter.toLowerCase())
+      )
+    }
+
+    setFilteredTerms(filtered)
+  }
+
+  const toggleExpanded = (term: string) => {
+    setExpandedTerm(expandedTerm === term ? null : term)
+  }
+
+  const getCategories = () => {
+    const categories = Array.from(new Set(glossaryTerms.map(term => term.category)))
+    return categories.sort()
+  }
+
+  const getLetters = () => {
+    const letters = Array.from(new Set(glossaryTerms.map(term => term.term.charAt(0).toUpperCase())))
+    return letters.sort()
   }
 
   const getTypeIcon = (type: string) => {
@@ -649,7 +793,7 @@ export default function KnowledgePage() {
     ]
 
     return { pdfs, links }
-  }, [filteredItems])
+  }, [])
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
@@ -661,9 +805,53 @@ export default function KnowledgePage() {
           animate={isLoaded ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          
+          {/* Header */}
+          <div className="mb-8">
+            <div className="flex items-center space-x-3 mb-4">
+              <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                <BookOpen className="w-6 h-6 text-blue-600" />
+              </div>
+              <div>
+                <h1 className="text-3xl font-bold text-gray-900">Knowledge & Resources</h1>
+                <p className="text-gray-600">
+                  Educational resources and medical terms for epilepsy and pregnancy
+                </p>
+              </div>
+            </div>
+          </div>
 
-          {/* Aggregated Resources */}
+          {/* Tab Navigation */}
+          <div className="mb-8">
+            <div className="border-b border-gray-200">
+              <nav className="-mb-px flex space-x-8">
+                <button
+                  onClick={() => setActiveTab('knowledge')}
+                  className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                    activeTab === 'knowledge'
+                      ? 'border-blue-500 text-blue-600'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
+                >
+                  Knowledge Base
+                </button>
+                <button
+                  onClick={() => setActiveTab('glossary')}
+                  className={`py-2 px-1 border-b-2 font-medium text-sm ${
+                    activeTab === 'glossary'
+                      ? 'border-blue-500 text-blue-600'
+                      : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
+                  }`}
+                >
+                  Medical Terms Glossary
+                </button>
+              </nav>
+            </div>
+          </div>
+
+          {/* Knowledge Tab Content */}
+          {activeTab === 'knowledge' && (
+            <>
+              {/* Aggregated Resources */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
             <div className="bg-white rounded-xl shadow-lg p-6">
               <h3 className="text-lg font-semibold text-gray-900 mb-3">Featured PDFs</h3>
@@ -704,25 +892,169 @@ export default function KnowledgePage() {
 
           {/* Knowledge Items removed per UX */}
 
-          {/* Important Notice */}
-          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
-            <div className="flex items-start space-x-3">
-              <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
-              <div>
-                <h3 className="text-lg font-semibold text-blue-900 mb-2">Knowledge Base Notice</h3>
-                <p className="text-blue-800 mb-4">
-                  This knowledge base contains educational resources and should not replace professional medical advice. 
-                  Always consult your healthcare provider for personalized medical guidance.
-                </p>
-                <ul className="text-sm text-blue-700 space-y-1">
-                  <li>• Resources are for educational purposes only</li>
-                  <li>• Always consult your doctor before making medical decisions</li>
-                  <li>• Individual situations may vary</li>
-                  <li>• Seek immediate medical attention for emergencies</li>
-                </ul>
+              {/* Important Notice */}
+              <div className="mt-8 bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <div className="flex items-start space-x-3">
+                  <Info className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-lg font-semibold text-blue-900 mb-2">Knowledge Base Notice</h3>
+                    <p className="text-blue-800 mb-4">
+                      This knowledge base contains educational resources and should not replace professional medical advice. 
+                      Always consult your healthcare provider for personalized medical guidance.
+                    </p>
+                    <ul className="text-sm text-blue-700 space-y-1">
+                      <li>• Resources are for educational purposes only</li>
+                      <li>• Always consult your doctor before making medical decisions</li>
+                      <li>• Individual situations may vary</li>
+                      <li>• Seek immediate medical attention for emergencies</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
+            </>
+          )}
+
+          {/* Glossary Tab Content */}
+          {activeTab === 'glossary' && (
+            <>
+              {/* Glossary Search and Filters */}
+              <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+                <div className="flex flex-col lg:flex-row gap-4">
+                  {/* Search */}
+                  <div className="flex-1">
+                    <div className="relative">
+                      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
+                      <input
+                        type="text"
+                        placeholder="Search medical terms..."
+                        value={glossarySearchTerm}
+                        onChange={(e) => handleGlossarySearch(e.target.value)}
+                        className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                      />
+                    </div>
+                  </div>
+
+                  {/* Category Filter */}
+                  <div className="flex items-center space-x-2">
+                    <Filter className="w-4 h-4 text-gray-600" />
+                    <select
+                      value={selectedCategory}
+                      onChange={(e) => handleCategoryFilter(e.target.value)}
+                      className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                      <option value="all">All Categories</option>
+                      {getCategories().map((category) => (
+                        <option key={category} value={category}>{category}</option>
+                      ))}
+                    </select>
+                  </div>
+
+                  {/* Letter Filter */}
+                  <div className="flex items-center space-x-2">
+                    <SortAsc className="w-4 h-4 text-gray-600" />
+                    <select
+                      value={selectedLetter}
+                      onChange={(e) => handleLetterFilter(e.target.value)}
+                      className="border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                    >
+                      <option value="all">All Letters</option>
+                      {getLetters().map((letter) => (
+                        <option key={letter} value={letter}>{letter}</option>
+                      ))}
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              {/* Terms List */}
+              <div className="space-y-4">
+                {filteredTerms.length === 0 ? (
+                  <div className="text-center py-12">
+                    <BookOpen className="w-12 h-12 text-gray-400 mx-auto mb-4" />
+                    <h3 className="text-lg font-medium text-gray-900 mb-2">No terms found</h3>
+                    <p className="text-gray-600">
+                      Try adjusting your search or filter criteria.
+                    </p>
+                  </div>
+                ) : (
+                  filteredTerms.map((term, index) => (
+                    <div
+                      key={term.term}
+                      className="bg-white rounded-xl shadow-lg overflow-hidden"
+                    >
+                      <div className="p-6">
+                        <div className="flex items-start justify-between">
+                          <div className="flex-1">
+                            <div className="flex items-center space-x-3 mb-3">
+                              <h3 className="text-xl font-semibold text-gray-900">
+                                {term.term}
+                                {term.full_form && (
+                                  <span className="text-gray-600 ml-2">({term.full_form})</span>
+                                )}
+                              </h3>
+                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
+                                {term.category}
+                              </span>
+                            </div>
+                            
+                            <p className="text-gray-700 mb-4">
+                              {term.definition}
+                            </p>
+
+                            {expandedTerm === term.term && (
+                              <div className="space-y-4">
+                                {term.related_terms.length > 0 && (
+                                  <div>
+                                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center space-x-2">
+                                      <Tag className="w-4 h-4" />
+                                      <span>Related Terms</span>
+                                    </h4>
+                                    <div className="flex flex-wrap gap-2">
+                                      {term.related_terms.map((related, idx) => (
+                                        <span
+                                          key={idx}
+                                          className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm"
+                                        >
+                                          {related}
+                                        </span>
+                                      ))}
+                                    </div>
+                                  </div>
+                                )}
+
+                                {term.example && (
+                                  <div>
+                                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center space-x-2">
+                                      <Info className="w-4 h-4" />
+                                      <span>Example</span>
+                                    </h4>
+                                    <p className="text-gray-700 italic">
+                                      {term.example}
+                                    </p>
+                                  </div>
+                                )}
+                              </div>
+                            )}
+                          </div>
+                          
+                          <button
+                            onClick={() => toggleExpanded(term.term)}
+                            className="p-2 text-gray-400 hover:text-gray-600 transition-colors ml-4"
+                          >
+                            {expandedTerm === term.term ? (
+                              <ChevronUp className="w-5 h-5" />
+                            ) : (
+                              <ChevronDown className="w-5 h-5" />
+                            )}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            </>
+          )}
         </motion.div>
       </main>
     </div>

@@ -16,7 +16,7 @@ export async function GET(request: NextRequest) {
     const includeExternal = searchParams.get('external') === 'true'
 
     // Load local data first
-    const dataPath = path.join(process.cwd(), '..', 'data', 'epilepsy_medication_safety_database.json')
+    const dataPath = path.join(process.cwd(), 'data', 'epilepsy_medication_safety_database.json')
     let localData = {}
     
     if (fs.existsSync(dataPath)) {

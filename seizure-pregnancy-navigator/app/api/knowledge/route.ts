@@ -277,7 +277,7 @@ export const maxDuration = 30
 
 export async function GET() {
   try {
-    const dataDir = path.join(process.cwd(), '..', 'data')
+    const dataDir = path.join(process.cwd(), 'data')
     const knowledgeItems: KnowledgeItem[] = []
 
     // Get all files in data directory

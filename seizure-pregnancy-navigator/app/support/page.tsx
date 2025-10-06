@@ -138,7 +138,7 @@ export default function SupportPage() {
               <div>
                 <h3 className="text-lg font-semibold text-red-900 mb-2">Medical Emergency?</h3>
                 <p className="text-red-800 mb-3">
-                  If you're experiencing a medical emergency, call 911 immediately. 
+                  If you&apos;re experiencing a medical emergency, call 911 immediately. 
                   This support page is for informational purposes only.
                 </p>
                 <div className="flex items-center space-x-4">

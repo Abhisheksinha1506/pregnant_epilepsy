@@ -119,7 +119,7 @@ export default function EmergencyButton() {
                     <div>
                       <h4 className="font-semibold text-blue-900 mb-1">Pregnancy Considerations</h4>
                       <p className="text-sm text-blue-800">
-                        If you're pregnant and having a seizure, inform emergency responders immediately. 
+                        If you&apos;re pregnant and having a seizure, inform emergency responders immediately. 
                         They need to know about your pregnancy for proper care.
                       </p>
                     </div>

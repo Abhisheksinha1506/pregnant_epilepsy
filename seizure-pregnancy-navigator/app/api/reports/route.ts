@@ -35,7 +35,7 @@ export const maxDuration = 30
 
 export async function GET() {
   try {
-    const dataDir = path.join(process.cwd(), '..', 'data')
+    const dataDir = path.join(process.cwd(), 'data')
 
     // Seizures
     const seizureCsvPath = path.join(dataDir, 'seizure_tracking_log.csv')
