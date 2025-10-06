@@ -52,8 +52,8 @@ export default function ReportsPage() {
         }
       }
 
-      // Common keys (gracefully handle missing)
-      const seizureLogs = readArray('seizure_logs')
+      // Use correct localStorage keys that the app actually uses
+      const seizureLogs = readArray('seizures')
       const medicationLogs = readArray('medication_logs')
       // If milestones are not stored, derive from due date if present
       const milestoneEntries = readArray('pregnancy_milestones')
@@ -161,13 +161,51 @@ export default function ReportsPage() {
   const exportReport = (report: ReportData) => {
     try {
       if (report.id === 'seizure') {
-        const csv = toCSV(rawSeizures)
+        // Create a human-readable CSV for seizures
+        const rows = (rawSeizures || []).map((s: any) => {
+          const triggers = Array.isArray(s?.triggers) ? s.triggers.join(' | ') : ''
+          const notes = typeof s?.notes === 'string' ? s.notes.replace(/,/g, ';').replace(/\n/g, ' ') : ''
+          const durationMinutes = s?.durationMinutes ?? ''
+          const durationSeconds = s?.durationSeconds ?? ''
+          const medicationTaken = s?.medicationTaken ? 'Yes' : 'No'
+          const period = s?.period ?? ''
+          const weekAtSeizure = s?.pregnancyContext?.weekAtSeizure ?? ''
+          const trimesterAtSeizure = s?.pregnancyContext?.trimesterAtSeizure ?? ''
+          return {
+            date: s?.date ?? '',
+            time: s?.time ?? '',
+            type: s?.type ?? '',
+            durationMinutes,
+            durationSeconds,
+            severity: s?.severity ?? '',
+            triggers,
+            notes,
+            medicationTaken,
+            period,
+            weekAtSeizure,
+            trimesterAtSeizure,
+          }
+        })
+        const csv = toCSV(rows, [
+          'date',
+          'time',
+          'type',
+          'durationMinutes',
+          'durationSeconds',
+          'severity',
+          'triggers',
+          'notes',
+          'medicationTaken',
+          'period',
+          'weekAtSeizure',
+          'trimesterAtSeizure',
+        ])
         downloadFile(csv, 'seizure_activity.csv', 'text/csv;charset=utf-8;')
         return
       }
       if (report.id === 'medication') {
         const csv = toCSV(rawMedications)
-        downloadFile(csv, 'medication_adherence.csv', 'text/csv;charset=utf-8;')
+        downloadFile(csv, 'medication_logs.csv', 'text/csv;charset=utf-8;')
         return
       }
       if (report.id === 'pregnancy') {
@@ -175,21 +213,30 @@ export default function ReportsPage() {
           const csv = toCSV(rawMilestones)
           downloadFile(csv, 'pregnancy_milestones.csv', 'text/csv;charset=utf-8;')
         } else {
+          // Create CSV for pregnancy progress even without milestones
           const due = typeof window !== 'undefined' ? (localStorage.getItem('pregnancy_due_date') || '') : ''
-          const summary = { dueDate: due, computedAt: new Date().toISOString() }
-          downloadFile(JSON.stringify(summary, null, 2), 'pregnancy_progress.json', 'application/json')
+          const pregnancyData = [{
+            dueDate: due,
+            computedAt: new Date().toISOString(),
+            status: 'Active',
+            milestones: 0
+          }]
+          const csv = toCSV(pregnancyData)
+          downloadFile(csv, 'pregnancy_progress.csv', 'text/csv;charset=utf-8;')
         }
         return
       }
-      // General summary
-      const summary = {
+      // General summary - create CSV format
+      const summaryData = [{
         generatedAt: new Date().toISOString(),
         seizureLogs: rawSeizures.length,
         medicationLogs: rawMedications.length,
         pregnancyMilestones: rawMilestones.length,
-        total: rawSeizures.length + rawMedications.length + rawMilestones.length
-      }
-      downloadFile(JSON.stringify(summary, null, 2), 'comprehensive_summary.json', 'application/json')
+        total: rawSeizures.length + rawMedications.length + rawMilestones.length,
+        reportType: 'Comprehensive Health Summary'
+      }]
+      const csv = toCSV(summaryData)
+      downloadFile(csv, 'comprehensive_summary.csv', 'text/csv;charset=utf-8;')
     } catch {
       // noop
     }
@@ -356,21 +403,31 @@ export default function ReportsPage() {
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">Seizure Frequency</h3>
-                  <div className="text-3xl font-bold text-blue-600 mb-1">2.3</div>
-                  <p className="text-sm text-gray-600">seizures per month</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Individual Seizures</h3>
+                  <div className="text-3xl font-bold text-blue-600 mb-1">{rawSeizures.length}</div>
+                  <p className="text-sm text-gray-600">total seizures logged</p>
                 </div>
                 
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">Medication Adherence</h3>
-                  <div className="text-3xl font-bold text-green-600 mb-1">94%</div>
-                  <p className="text-sm text-gray-600">compliance rate</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Latest Seizure</h3>
+                  <div className="text-3xl font-bold text-green-600 mb-1">
+                    {rawSeizures.length > 0 
+                      ? new Date(rawSeizures.sort((a, b) => new Date(`${b.date} ${b.time}`).getTime() - new Date(`${a.date} ${a.time}`).getTime())[0].date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+                      : 'None'
+                    }
+                  </div>
+                  <p className="text-sm text-gray-600">most recent seizure</p>
                 </div>
                 
                 <div className="bg-gray-50 rounded-lg p-4">
-                  <h3 className="font-semibold text-gray-900 mb-2">Pregnancy Progress</h3>
-                  <div className="text-3xl font-bold text-pink-600 mb-1">28</div>
-                  <p className="text-sm text-gray-600">weeks completed</p>
+                  <h3 className="font-semibold text-gray-900 mb-2">Highest Severity</h3>
+                  <div className="text-3xl font-bold text-pink-600 mb-1">
+                    {rawSeizures.length > 0 
+                      ? Math.max(...rawSeizures.map(s => s.severity))
+                      : 0
+                    }/5
+                  </div>
+                  <p className="text-sm text-gray-600">maximum severity level</p>
                 </div>
               </div>
               

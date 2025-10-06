@@ -966,91 +966,49 @@ export default function KnowledgePage() {
                 </div>
               </div>
 
-              {/* Terms List */}
-              <div className="space-y-4">
+              {/* Terms Table (scrollable) */}
+              <div className="bg-white rounded-xl shadow-lg border border-gray-100">
                 {filteredTerms.length === 0 ? (
                   <div className="text-center py-12">
                     <BookOpen className="w-12 h-12 text-gray-400 mx-auto mb-4" />
                     <h3 className="text-lg font-medium text-gray-900 mb-2">No terms found</h3>
-                    <p className="text-gray-600">
-                      Try adjusting your search or filter criteria.
-                    </p>
+                    <p className="text-gray-600">Try adjusting your search or filter criteria.</p>
                   </div>
                 ) : (
-                  filteredTerms.map((term, index) => (
-                    <div
-                      key={term.term}
-                      className="bg-white rounded-xl shadow-lg overflow-hidden"
-                    >
-                      <div className="p-6">
-                        <div className="flex items-start justify-between">
-                          <div className="flex-1">
-                            <div className="flex items-center space-x-3 mb-3">
-                              <h3 className="text-xl font-semibold text-gray-900">
-                                {term.term}
-                                {term.full_form && (
-                                  <span className="text-gray-600 ml-2">({term.full_form})</span>
-                                )}
-                              </h3>
-                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
-                                {term.category}
-                              </span>
-                            </div>
-                            
-                            <p className="text-gray-700 mb-4">
-                              {term.definition}
-                            </p>
-
-                            {expandedTerm === term.term && (
-                              <div className="space-y-4">
-                                {term.related_terms.length > 0 && (
-                                  <div>
-                                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center space-x-2">
-                                      <Tag className="w-4 h-4" />
-                                      <span>Related Terms</span>
-                                    </h4>
-                                    <div className="flex flex-wrap gap-2">
-                                      {term.related_terms.map((related, idx) => (
-                                        <span
-                                          key={idx}
-                                          className="px-2 py-1 bg-gray-100 text-gray-700 rounded-md text-sm"
-                                        >
-                                          {related}
-                                        </span>
-                                      ))}
-                                    </div>
-                                  </div>
-                                )}
-
-                                {term.example && (
-                                  <div>
-                                    <h4 className="font-semibold text-gray-900 mb-2 flex items-center space-x-2">
-                                      <Info className="w-4 h-4" />
-                                      <span>Example</span>
-                                    </h4>
-                                    <p className="text-gray-700 italic">
-                                      {term.example}
-                                    </p>
-                                  </div>
-                                )}
-                              </div>
-                            )}
-                          </div>
-                          
-                          <button
-                            onClick={() => toggleExpanded(term.term)}
-                            className="p-2 text-gray-400 hover:text-gray-600 transition-colors ml-4"
-                          >
-                            {expandedTerm === term.term ? (
-                              <ChevronUp className="w-5 h-5" />
-                            ) : (
-                              <ChevronDown className="w-5 h-5" />
-                            )}
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  ))
+                  <div className="max-h-[32rem] overflow-y-auto">
+                    <table className="min-w-full divide-y divide-gray-200">
+                      <thead className="bg-gray-50 sticky top-0 z-10">
+                        <tr>
+                          <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Term</th>
+                          <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Full Form</th>
+                          <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Category</th>
+                          <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Definition</th>
+                          <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Related Terms</th>
+                        </tr>
+                      </thead>
+                      <tbody className="bg-white divide-y divide-gray-200">
+                        {filteredTerms.map((term) => (
+                          <tr key={term.term} className="hover:bg-gray-50">
+                            <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">{term.term}</td>
+                            <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-700">{term.full_form || '—'}</td>
+                            <td className="px-4 py-3 whitespace-nowrap text-sm">
+                              <span className="px-2 py-1 rounded-full text-xs font-medium bg-blue-100 text-blue-800">{term.category}</span>
+                            </td>
+                            <td className="px-4 py-3 text-sm text-gray-700 max-w-[420px]">{term.definition}</td>
+                            <td className="px-4 py-3 text-sm text-gray-700 max-w-[320px]">
+                              {term.related_terms && term.related_terms.length > 0 ? (
+                                <div className="flex flex-wrap gap-1">
+                                  {term.related_terms.map((rt, i) => (
+                                    <span key={i} className="px-2 py-0.5 bg-gray-100 text-gray-700 text-xs rounded-full">{rt}</span>
+                                  ))}
+                                </div>
+                              ) : '—'}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 )}
               </div>
             </>

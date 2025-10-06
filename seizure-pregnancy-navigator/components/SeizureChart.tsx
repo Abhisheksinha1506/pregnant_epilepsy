@@ -10,6 +10,8 @@ interface Seizure {
   time: string
   type: string
   duration: number
+  durationMinutes?: number
+  durationSeconds?: number
   severity: number
   triggers: string[]
   notes: string
@@ -22,49 +24,32 @@ interface SeizureChartProps {
 
 export default function SeizureChart({ seizures }: SeizureChartProps) {
   const [chartType, setChartType] = useState<'frequency' | 'severity' | 'duration'>('frequency')
+  const [showDetailedView, setShowDetailedView] = useState(false)
 
-  // Process data for charts
+  // Process data for charts - now shows individual seizures instead of aggregated data
   const processData = () => {
-    const last30Days = new Date()
-    last30Days.setDate(last30Days.getDate() - 30)
+    if (seizures.length === 0) return []
     
-    const dailyData: { [key: string]: any } = {}
-    
-    // Initialize last 30 days
-    for (let i = 29; i >= 0; i--) {
-      const date = new Date()
-      date.setDate(date.getDate() - i)
-      const dateStr = date.toISOString().split('T')[0]
-      dailyData[dateStr] = {
-        date: dateStr,
-        displayDate: date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-        frequency: 0,
-        severity: 0,
-        duration: 0,
-        count: 0
-      }
-    }
-    
-    // Add seizure data
-    seizures.forEach(seizure => {
-      const seizureDate = seizure.date
-      if (dailyData[seizureDate]) {
-        dailyData[seizureDate].frequency += 1
-        dailyData[seizureDate].severity += seizure.severity
-        dailyData[seizureDate].duration += seizure.duration
-        dailyData[seizureDate].count += 1
-      }
-    })
-    
-    // Calculate averages
-    Object.values(dailyData).forEach((day: any) => {
-      if (day.count > 0) {
-        day.severity = Math.round(day.severity / day.count)
-        day.duration = Math.round(day.duration / day.count)
-      }
-    })
-    
-    return Object.values(dailyData)
+    // Create individual data points for each seizure
+    return seizures
+      .sort((a, b) => new Date(`${a.date} ${a.time}`).getTime() - new Date(`${b.date} ${b.time}`).getTime())
+      .map((seizure, index) => {
+        const seizureDateTime = new Date(`${seizure.date} ${seizure.time}`)
+        return {
+          date: seizure.date,
+          time: seizure.time,
+          displayDate: seizureDateTime.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+          displayTime: seizureDateTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' }),
+          frequency: 1, // Each seizure is 1 occurrence
+          severity: seizure.severity,
+          duration: seizure.duration,
+          durationMinutes: seizure.durationMinutes || 0,
+          durationSeconds: seizure.durationSeconds || 0,
+          type: seizure.type,
+          index: index + 1,
+          seizureId: seizure.id
+        }
+      })
   }
 
   const chartData = processData()
@@ -78,9 +63,12 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
             <XAxis 
               dataKey="displayDate" 
               tick={{ fontSize: 12 }}
-              interval="preserveStartEnd"
+              label={{ value: 'Date', position: 'insideBottom', offset: -5 }}
             />
-            <YAxis tick={{ fontSize: 12 }} />
+            <YAxis 
+              tick={{ fontSize: 12 }}
+              label={{ value: 'Seizure Count', angle: -90, position: 'insideLeft' }}
+            />
             <Tooltip 
               labelStyle={{ color: '#374151' }}
               contentStyle={{ 
@@ -88,26 +76,35 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 border: '1px solid #e5e7eb',
                 borderRadius: '8px'
               }}
+              formatter={(value, name, props) => [
+                `${props.payload.displayDate} at ${props.payload.displayTime} - ${props.payload.type}`,
+                'Seizure Count'
+              ]}
             />
             <Line 
               type="monotone" 
               dataKey="frequency" 
               stroke="#3b82f6" 
-              strokeWidth={2}
-              dot={{ fill: '#3b82f6', strokeWidth: 2, r: 4 }}
+              strokeWidth={3}
+              dot={{ fill: '#3b82f6', strokeWidth: 2, r: 6 }}
+              activeDot={{ r: 8, stroke: '#3b82f6', strokeWidth: 2 }}
             />
           </LineChart>
         )
       case 'severity':
         return (
-          <BarChart data={chartData}>
+          <LineChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis 
               dataKey="displayDate" 
               tick={{ fontSize: 12 }}
-              interval="preserveStartEnd"
+              label={{ value: 'Date', position: 'insideBottom', offset: -5 }}
             />
-            <YAxis tick={{ fontSize: 12 }} />
+            <YAxis 
+              tick={{ fontSize: 12 }}
+              domain={[0, 5]}
+              label={{ value: 'Severity Level', angle: -90, position: 'insideLeft' }}
+            />
             <Tooltip 
               labelStyle={{ color: '#374151' }}
               contentStyle={{ 
@@ -115,24 +112,34 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 border: '1px solid #e5e7eb',
                 borderRadius: '8px'
               }}
+              formatter={(value, name, props) => [
+                `${props.payload.displayDate} at ${props.payload.displayTime} - ${props.payload.type}`,
+                'Severity Level'
+              ]}
             />
-            <Bar 
+            <Line 
+              type="monotone" 
               dataKey="severity" 
-              fill="#ef4444"
-              radius={[2, 2, 0, 0]}
+              stroke="#ef4444" 
+              strokeWidth={3}
+              dot={{ fill: '#ef4444', strokeWidth: 2, r: 6 }}
+              activeDot={{ r: 8, stroke: '#ef4444', strokeWidth: 2 }}
             />
-          </BarChart>
+          </LineChart>
         )
       case 'duration':
         return (
-          <BarChart data={chartData}>
+          <LineChart data={chartData}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis 
               dataKey="displayDate" 
               tick={{ fontSize: 12 }}
-              interval="preserveStartEnd"
+              label={{ value: 'Date', position: 'insideBottom', offset: -5 }}
             />
-            <YAxis tick={{ fontSize: 12 }} />
+            <YAxis 
+              tick={{ fontSize: 12 }}
+              label={{ value: 'Duration (minutes)', angle: -90, position: 'insideLeft' }}
+            />
             <Tooltip 
               labelStyle={{ color: '#374151' }}
               contentStyle={{ 
@@ -140,13 +147,20 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 border: '1px solid #e5e7eb',
                 borderRadius: '8px'
               }}
+              formatter={(value, name, props) => [
+                `${props.payload.displayDate} at ${props.payload.displayTime} - ${props.payload.type}`,
+                'Duration (minutes)'
+              ]}
             />
-            <Bar 
+            <Line 
+              type="monotone" 
               dataKey="duration" 
-              fill="#10b981"
-              radius={[2, 2, 0, 0]}
+              stroke="#10b981" 
+              strokeWidth={3}
+              dot={{ fill: '#10b981', strokeWidth: 2, r: 6 }}
+              activeDot={{ r: 8, stroke: '#10b981', strokeWidth: 2 }}
             />
-          </BarChart>
+          </LineChart>
         )
     }
   }
@@ -180,7 +194,7 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
           >
-            Frequency
+            Frequency Trend
           </button>
           <button
             onClick={() => setChartType('severity')}
@@ -190,7 +204,7 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
           >
-            Severity
+            Severity Trend
           </button>
           <button
             onClick={() => setChartType('duration')}
@@ -200,48 +214,120 @@ export default function SeizureChart({ seizures }: SeizureChartProps) {
                 : 'text-gray-600 hover:bg-gray-100'
             }`}
           >
-            Duration
+            Duration Trend
+          </button>
+          <button
+            onClick={() => setShowDetailedView(!showDetailedView)}
+            className={`px-3 py-1 rounded-lg text-sm font-medium transition-colors ${
+              showDetailedView
+                ? 'bg-purple-100 text-purple-700'
+                : 'text-gray-600 hover:bg-gray-100'
+            }`}
+          >
+            {showDetailedView ? 'Chart View' : 'Detailed View'}
           </button>
         </div>
       </div>
 
-      <div className="h-80">
-        <ResponsiveContainer width="100%" height="100%">
-          {getChartContent()}
-        </ResponsiveContainer>
-      </div>
+      {showDetailedView ? (
+        <div className="space-y-4">
+          <div className="text-sm text-gray-600 mb-4">
+            Individual seizures with timestamps and details
+          </div>
+          <div className="max-h-80 overflow-y-auto space-y-3">
+            {seizures
+              .sort((a, b) => new Date(`${a.date} ${a.time}`).getTime() - new Date(`${b.date} ${b.time}`).getTime())
+              .map((seizure, index) => (
+                <div key={seizure.id} className="bg-gray-50 rounded-lg p-4 border border-gray-200">
+                  <div className="flex items-center justify-between mb-2">
+                    <div className="flex items-center space-x-3">
+                      <div className="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                        <span className="text-sm font-semibold text-blue-600">{index + 1}</span>
+                      </div>
+                      <div>
+                        <div className="font-medium text-gray-900">
+                          {new Date(seizure.date).toLocaleDateString('en-US', { 
+                            weekday: 'short', 
+                            month: 'short', 
+                            day: 'numeric' 
+                          })} at {seizure.time}
+                        </div>
+                        <div className="text-sm text-gray-600">{seizure.type}</div>
+                      </div>
+                    </div>
+                    <div className="text-right">
+                      <div className="text-sm font-medium text-gray-900">
+                        {seizure.durationMinutes > 0 && seizure.durationSeconds > 0 
+                          ? `${seizure.durationMinutes}m ${seizure.durationSeconds}s`
+                          : seizure.durationMinutes > 0 
+                            ? `${seizure.durationMinutes}m`
+                            : `${seizure.durationSeconds}s`
+                        }
+                      </div>
+                      <div className="text-xs text-gray-500">
+                        Severity: {seizure.severity}/5
+                      </div>
+                    </div>
+                  </div>
+                  {seizure.triggers.length > 0 && (
+                    <div className="flex flex-wrap gap-1 mt-2">
+                      {seizure.triggers.map((trigger, idx) => (
+                        <span key={idx} className="px-2 py-1 bg-blue-100 text-blue-700 text-xs rounded-full">
+                          {trigger}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  {seizure.notes && (
+                    <div className="mt-2 text-sm text-gray-600 bg-white p-2 rounded border">
+                      <strong>Notes:</strong> {seizure.notes}
+                    </div>
+                  )}
+                </div>
+              ))}
+          </div>
+        </div>
+      ) : (
+        <div className="h-80">
+          <ResponsiveContainer width="100%" height="100%">
+            {getChartContent()}
+          </ResponsiveContainer>
+        </div>
+      )}
 
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-        <div className="bg-blue-50 rounded-lg p-4">
-          <div className="flex items-center space-x-2 mb-2">
-            <TrendingUp className="w-4 h-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-900">Frequency</span>
+      {!showDetailedView && (
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="bg-blue-50 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-2">
+              <TrendingUp className="w-4 h-4 text-blue-600" />
+              <span className="text-sm font-medium text-blue-900">Frequency</span>
+            </div>
+            <p className="text-xs text-blue-700">
+              Number of seizures per day (aggregated view)
+            </p>
           </div>
-          <p className="text-xs text-blue-700">
-            Number of seizures per day over the last 30 days
-          </p>
-        </div>
-        
-        <div className="bg-red-50 rounded-lg p-4">
-          <div className="flex items-center space-x-2 mb-2">
-            <Calendar className="w-4 h-4 text-red-600" />
-            <span className="text-sm font-medium text-red-900">Severity</span>
+          
+          <div className="bg-red-50 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-2">
+              <Calendar className="w-4 h-4 text-red-600" />
+              <span className="text-sm font-medium text-red-900">Severity</span>
+            </div>
+            <p className="text-xs text-red-700">
+              Average seizure severity (1-5 scale) per day
+            </p>
           </div>
-          <p className="text-xs text-red-700">
-            Average seizure severity (1-5 scale) per day
-          </p>
-        </div>
-        
-        <div className="bg-green-50 rounded-lg p-4">
-          <div className="flex items-center space-x-2 mb-2">
-            <BarChart3 className="w-4 h-4 text-green-600" />
-            <span className="text-sm font-medium text-green-900">Duration</span>
+          
+          <div className="bg-green-50 rounded-lg p-4">
+            <div className="flex items-center space-x-2 mb-2">
+              <BarChart3 className="w-4 h-4 text-green-600" />
+              <span className="text-sm font-medium text-green-900">Duration</span>
+            </div>
+            <p className="text-xs text-green-700">
+              Average seizure duration in minutes per day
+            </p>
           </div>
-          <p className="text-xs text-green-700">
-            Average seizure duration in minutes per day
-          </p>
         </div>
-      </div>
+      )}
     </div>
   )
 }

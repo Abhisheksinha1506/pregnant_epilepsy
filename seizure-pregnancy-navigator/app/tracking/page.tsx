@@ -10,7 +10,8 @@ import {
   Activity,
   BarChart3,
   Download,
-  Filter
+  Filter,
+  Trash2
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import SeizureLogForm from '@/components/SeizureLogForm'
@@ -24,6 +25,8 @@ interface Seizure {
   time: string
   type: string
   duration: number
+  durationMinutes?: number
+  durationSeconds?: number
   severity: number
   triggers: string[]
   notes: string
@@ -37,10 +40,47 @@ export default function TrackingPage() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
-    // Load seizures from localStorage
+    // Load seizures from localStorage with validation
     const savedSeizures = localStorage.getItem('seizures')
     if (savedSeizures) {
-      setSeizures(JSON.parse(savedSeizures))
+      try {
+        const parsedSeizures = JSON.parse(savedSeizures)
+        
+        // Validate and filter out corrupted data
+        const validSeizures = parsedSeizures.filter((seizure: Seizure) => {
+          // Check for reasonable duration values
+          const minutes = seizure.durationMinutes || 0
+          const seconds = seizure.durationSeconds || 0
+          const totalDuration = seizure.duration || 0
+          
+          // Filter out extreme values
+          if (minutes > 60 || seconds > 59 || totalDuration > 60) {
+            console.warn('Filtered out corrupted seizure data:', seizure)
+            return false
+          }
+          
+          // Filter out negative values
+          if (minutes < 0 || seconds < 0 || totalDuration < 0) {
+            console.warn('Filtered out invalid seizure data:', seizure)
+            return false
+          }
+          
+          return true
+        })
+        
+        // If we filtered out data, update localStorage
+        if (validSeizures.length !== parsedSeizures.length) {
+          console.log(`🧹 Filtered out ${parsedSeizures.length - validSeizures.length} corrupted seizures`)
+          localStorage.setItem('seizures', JSON.stringify(validSeizures))
+        }
+        
+        setSeizures(validSeizures)
+      } catch (error) {
+        console.error('Error parsing seizure data:', error)
+        // Clear corrupted data
+        localStorage.removeItem('seizures')
+        setSeizures([])
+      }
     }
     setIsLoaded(true)
   }, [])
@@ -77,15 +117,58 @@ export default function TrackingPage() {
   })
 
   const exportData = () => {
-    const dataStr = JSON.stringify(seizures, null, 2)
-    const dataBlob = new Blob([dataStr], { type: 'application/json' })
+    // Convert seizures to CSV format
+    const csvHeaders = 'Date,Time,Type,Duration (minutes),Duration (seconds),Severity,Triggers,Notes,Medication Taken\n'
+    const csvRows = seizures.map(seizure => {
+      const triggers = seizure.triggers.join('; ')
+      const notes = seizure.notes.replace(/,/g, ';').replace(/\n/g, ' ')
+      const medicationTaken = seizure.medicationTaken ? 'Yes' : 'No'
+      const durationMinutes = seizure.durationMinutes || 0
+      const durationSeconds = seizure.durationSeconds || 0
+      
+      return `"${seizure.date}","${seizure.time}","${seizure.type}","${durationMinutes}","${durationSeconds}","${seizure.severity}","${triggers}","${notes}","${medicationTaken}"`
+    }).join('\n')
+    
+    const csvContent = csvHeaders + csvRows
+    const dataBlob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' })
     const url = URL.createObjectURL(dataBlob)
     const link = document.createElement('a')
     link.href = url
-    link.download = `seizure-data-${new Date().toISOString().split('T')[0]}.json`
+    link.download = `seizure-data-${new Date().toISOString().split('T')[0]}.csv`
     link.click()
     URL.revokeObjectURL(url)
-    toast.success('Data exported successfully')
+    toast.success('Data exported as CSV successfully')
+  }
+
+  const clearAllData = () => {
+    // Show confirmation dialog
+    const confirmed = window.confirm(
+      '⚠️ WARNING: This will permanently delete ALL your seizure data.\n\n' +
+      'This action cannot be undone. Are you sure you want to continue?\n\n' +
+      'Consider exporting your data first if you want to keep a backup.'
+    )
+    
+    if (confirmed) {
+      // Clear all localStorage data
+      localStorage.removeItem('seizures')
+      localStorage.removeItem('seizure_logs')
+      localStorage.removeItem('medication_logs')
+      localStorage.removeItem('pregnancy_milestones')
+      localStorage.removeItem('dueDate')
+      localStorage.removeItem('pregnancy_due_date')
+      localStorage.removeItem('pregnancy_start_date')
+      localStorage.removeItem('pregnancy_start_date_type')
+      localStorage.removeItem('pregnancy_status')
+      
+      // Clear state
+      setSeizures([])
+      
+      // Show success message
+      toast.success('All data cleared successfully')
+      
+      // Log the action
+      console.log('🧹 All localStorage data cleared by user')
+    }
   }
 
   return (
@@ -106,7 +189,7 @@ export default function TrackingPage() {
             </p>
           </div>
 
-          {/* Stats Cards */}
+          {/* Individual Seizure Stats Cards */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -131,14 +214,12 @@ export default function TrackingPage() {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600">This Week</p>
+                  <p className="text-sm text-gray-600">Latest Seizure</p>
                   <p className="text-2xl font-bold text-gray-900">
-                    {seizures.filter(s => {
-                      const seizureDate = new Date(s.date)
-                      const weekAgo = new Date()
-                      weekAgo.setDate(weekAgo.getDate() - 7)
-                      return seizureDate >= weekAgo
-                    }).length}
+                    {seizures.length > 0 
+                      ? new Date(seizures.sort((a, b) => new Date(`${b.date} ${b.time}`).getTime() - new Date(`${a.date} ${a.time}`).getTime())[0].date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })
+                      : 'None'
+                    }
                   </p>
                 </div>
                 <Calendar className="w-8 h-8 text-green-500" />
@@ -153,9 +234,12 @@ export default function TrackingPage() {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600">Severe Seizures</p>
+                  <p className="text-sm text-gray-600">Highest Severity</p>
                   <p className="text-2xl font-bold text-gray-900">
-                    {seizures.filter(s => s.severity >= 4).length}
+                    {seizures.length > 0 
+                      ? Math.max(...seizures.map(s => s.severity))
+                      : 0
+                    }/5
                   </p>
                 </div>
                 <AlertTriangle className="w-8 h-8 text-red-500" />
@@ -170,10 +254,10 @@ export default function TrackingPage() {
             >
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-sm text-gray-600">Avg Duration</p>
+                  <p className="text-sm text-gray-600">Longest Duration</p>
                   <p className="text-2xl font-bold text-gray-900">
                     {seizures.length > 0 
-                      ? Math.round(seizures.reduce((acc, s) => acc + s.duration, 0) / seizures.length)
+                      ? Math.max(...seizures.map(s => s.duration)).toFixed(1)
                       : 0
                     }m
                   </p>
@@ -182,6 +266,27 @@ export default function TrackingPage() {
               </div>
             </motion.div>
           </div>
+
+          {/* Data Management Warning */}
+          {seizures.length > 0 && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isLoaded ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mb-6"
+            >
+              <div className="flex items-start space-x-3">
+                <AlertTriangle className="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                <div>
+                  <h4 className="text-sm font-semibold text-yellow-800 mb-1">Data Management</h4>
+                  <p className="text-xs text-yellow-700">
+                    You have {seizures.length} seizure{seizures.length !== 1 ? 's' : ''} logged. 
+                    Consider exporting your data before clearing to keep a backup.
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          )}
 
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -205,6 +310,17 @@ export default function TrackingPage() {
             >
               <Download className="w-5 h-5" />
               <span>Export Data</span>
+            </motion.button>
+
+            <motion.button
+              initial={{ opacity: 0, y: 20 }}
+              animate={isLoaded ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.6, delay: 0.7 }}
+              onClick={clearAllData}
+              className="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors duration-200 flex items-center space-x-2"
+            >
+              <Trash2 className="w-5 h-5" />
+              <span>Clear All Data</span>
             </motion.button>
           </div>
 

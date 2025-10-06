@@ -11,7 +11,9 @@ import {
   XCircle,
   Info,
   Filter,
-  Download
+  Download,
+  Plus,
+  Trash2
 } from 'lucide-react'
 import Navigation from '@/components/Navigation'
 import MedicationCard from '@/components/MedicationCard'
@@ -33,10 +35,28 @@ export default function MedicationsPage() {
   const [filter, setFilter] = useState('all')
   const [isLoaded, setIsLoaded] = useState(false)
   const [showSearch, setShowSearch] = useState(false)
+  // Medication logging state
+  const [medicationLogs, setMedicationLogs] = useState<any[]>([])
+  const [logForm, setLogForm] = useState({
+    date: new Date().toISOString().split('T')[0],
+    time: new Date().toTimeString().slice(0, 5),
+    medication: '',
+    dose: '',
+    taken: true,
+    notes: ''
+  })
 
   useEffect(() => {
     // Load medication data from our comprehensive database
     loadMedicationData()
+    // Load medication logs
+    try {
+      const raw = localStorage.getItem('medication_logs')
+      if (raw) {
+        const parsed = JSON.parse(raw)
+        if (Array.isArray(parsed)) setMedicationLogs(parsed)
+      }
+    } catch {}
     setIsLoaded(true)
   }, [])
 
@@ -313,6 +333,31 @@ export default function MedicationsPage() {
     return <Info className="w-5 h-5 text-blue-600" />
   }
 
+  const addMedicationLog = () => {
+    if (!logForm.medication.trim()) return
+    const entry = {
+      id: Date.now().toString(),
+      ...logForm
+    }
+    const updated = [entry, ...medicationLogs]
+    setMedicationLogs(updated)
+    localStorage.setItem('medication_logs', JSON.stringify(updated))
+    setLogForm({
+      date: new Date().toISOString().split('T')[0],
+      time: new Date().toTimeString().slice(0, 5),
+      medication: '',
+      dose: '',
+      taken: true,
+      notes: ''
+    })
+  }
+
+  const deleteMedicationLog = (id: string) => {
+    const updated = medicationLogs.filter((l) => l.id !== id)
+    setMedicationLogs(updated)
+    localStorage.setItem('medication_logs', JSON.stringify(updated))
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-pink-50">
       <Navigation />
@@ -429,27 +474,132 @@ export default function MedicationsPage() {
             </div>
           </div>
 
-          {/* Medications List */}
-          <div className="space-y-6">
+          {/* Medication Log */}
+          <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-semibold text-gray-900">Medication Log</h3>
+            </div>
+            {/* Log Form */}
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-3 mb-4">
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Date</label>
+                <input type="date" max={new Date().toISOString().split('T')[0]} value={logForm.date} onChange={(e)=>setLogForm({ ...logForm, date: e.target.value })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Time</label>
+                <input type="time" value={logForm.time} onChange={(e)=>setLogForm({ ...logForm, time: e.target.value })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Medication</label>
+                <input type="text" placeholder="e.g., Lamotrigine" value={logForm.medication} onChange={(e)=>setLogForm({ ...logForm, medication: e.target.value })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+              </div>
+              <div>
+                <label className="block text-sm text-gray-700 mb-1">Dose</label>
+                <input type="text" placeholder="e.g., 100 mg" value={logForm.dose} onChange={(e)=>setLogForm({ ...logForm, dose: e.target.value })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+              </div>
+              <div className="flex items-end">
+                <div className="flex items-center space-x-2">
+                  <input type="checkbox" checked={logForm.taken} onChange={(e)=>setLogForm({ ...logForm, taken: e.target.checked })} className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"/>
+                  <span className="text-sm text-gray-700">Taken</span>
+                </div>
+              </div>
+              <div className="md:col-span-4">
+                <label className="block text-sm text-gray-700 mb-1">Notes</label>
+                <input type="text" value={logForm.notes} onChange={(e)=>setLogForm({ ...logForm, notes: e.target.value })} className="w-full border border-gray-300 rounded-lg px-3 py-2 focus:ring-2 focus:ring-blue-500 focus:border-transparent"/>
+              </div>
+              <div className="md:col-span-1 flex items-end">
+                <button onClick={addMedicationLog} className="w-full inline-flex items-center justify-center bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-700 transition-colors">
+                  <Plus className="w-4 h-4 mr-2"/>Add
+                </button>
+              </div>
+            </div>
+
+            {/* Logs Table */}
+            <div className="bg-white border border-gray-100 rounded-lg">
+              {medicationLogs.length === 0 ? (
+                <div className="p-6 text-sm text-gray-500">No medication logs yet.</div>
+              ) : (
+                <div className="max-h-80 overflow-y-auto">
+                  <table className="min-w-full divide-y divide-gray-200">
+                    <thead className="bg-gray-50 sticky top-0 z-10">
+                      <tr>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Date</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Time</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Medication</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Dose</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Taken</th>
+                        <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Notes</th>
+                        <th className="px-4 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody className="bg-white divide-y divide-gray-200">
+                      {medicationLogs.map((l) => (
+                        <tr key={l.id} className="hover:bg-gray-50">
+                          <td className="px-4 py-3 text-sm text-gray-900 whitespace-nowrap">{l.date}</td>
+                          <td className="px-4 py-3 text-sm text-gray-700 whitespace-nowrap">{l.time}</td>
+                          <td className="px-4 py-3 text-sm text-gray-900 whitespace-nowrap">{l.medication}</td>
+                          <td className="px-4 py-3 text-sm text-gray-700 whitespace-nowrap">{l.dose || '—'}</td>
+                          <td className="px-4 py-3 text-sm text-gray-700 whitespace-nowrap">{l.taken ? 'Yes' : 'No'}</td>
+                          <td className="px-4 py-3 text-sm text-gray-700">{l.notes || '—'}</td>
+                          <td className="px-4 py-3 text-right whitespace-nowrap">
+                            <button onClick={()=>deleteMedicationLog(l.id)} className="text-red-400 hover:text-red-600"><Trash2 className="w-5 h-5"/></button>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Medications Table (scrollable) */}
+          <div className="bg-white rounded-xl shadow-lg border border-gray-100">
             {filteredMedications.length === 0 ? (
-              <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+              <div className="p-8 text-center">
                 <Pill className="w-16 h-16 text-gray-400 mx-auto mb-4" />
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">No Medications Found</h3>
-                <p className="text-gray-600">
-                  Try adjusting your search or filter criteria.
-                </p>
+                <p className="text-gray-600">Try adjusting your search or filter criteria.</p>
               </div>
             ) : (
-              filteredMedications.map((medication, index) => (
-                <motion.div
-                  key={medication.medication}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={isLoaded ? { opacity: 1, y: 0 } : {}}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
-                  <MedicationCard medication={medication} />
-                </motion.div>
-              ))
+              <div className="max-h-[32rem] overflow-y-auto">
+                <table className="min-w-full divide-y divide-gray-200">
+                  <thead className="bg-gray-50 sticky top-0 z-10">
+                    <tr>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Medication</th>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Brand Names</th>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Pregnancy Category</th>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Safety Profile</th>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Key Points</th>
+                      <th className="px-4 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Monitoring</th>
+                    </tr>
+                  </thead>
+                  <tbody className="bg-white divide-y divide-gray-200">
+                    {filteredMedications.map((m) => (
+                      <tr key={m.medication} className="hover:bg-gray-50">
+                        <td className="px-4 py-3 whitespace-nowrap text-sm font-medium text-gray-900">{m.medication}</td>
+                        <td className="px-4 py-3 whitespace-nowrap text-sm text-gray-700">{m.brand_names.join(', ')}</td>
+                        <td className="px-4 py-3 whitespace-nowrap text-sm">
+                          <span className={`px-2 py-1 rounded-full text-xs font-medium ${getCategoryColor(m.pregnancy_category)}`}>{m.pregnancy_category}</span>
+                        </td>
+                        <td className="px-4 py-3 text-sm text-gray-700 max-w-[280px]">{m.safety_profile}</td>
+                        <td className="px-4 py-3 text-sm text-gray-700 max-w-[320px]">
+                          <ul className="list-disc list-inside space-y-0.5">
+                            {m.key_points.slice(0, 3).map((p, i) => (<li key={i}>{p}</li>))}
+                            {m.key_points.length > 3 && <li className="text-xs text-gray-500">and {m.key_points.length - 3} more…</li>}
+                          </ul>
+                        </td>
+                        <td className="px-4 py-3 text-sm text-gray-700 max-w-[320px]">
+                          <ul className="list-disc list-inside space-y-0.5">
+                            {m.monitoring.slice(0, 3).map((p, i) => (<li key={i}>{p}</li>))}
+                            {m.monitoring.length > 3 && <li className="text-xs text-gray-500">and {m.monitoring.length - 3} more…</li>}
+                          </ul>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
             )}
           </div>
 
