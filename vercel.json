@@ -2,6 +2,8 @@
   "version": 2,
   "buildCommand": "cd seizure-pregnancy-navigator && npm run build",
   "installCommand": "cd seizure-pregnancy-navigator && npm install",
-  "outputDirectory": "seizure-pregnancy-navigator/.next"
+  "outputDirectory": "seizure-pregnancy-navigator/.next",
+  "framework": "nextjs",
+  "rootDirectory": "seizure-pregnancy-navigator"
 }
 
